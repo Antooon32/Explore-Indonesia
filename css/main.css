@@ -43,6 +43,7 @@ input {
 button {
   border: none;
   outline: none;
+  background: none;
 }
 
 textarea {
@@ -98,10 +99,9 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   height: 50px;
-  width: 155px;
+  width: 165px;
   gap: 5px;
   position: relative;
-  background-color: black;
 }
 .logo__text {
   font-family: var(--second-family);
@@ -116,25 +116,154 @@ body {
   position: absolute;
   top: 30px;
   left: 0px;
-  width: 100%;
+  width: 110%;
   height: 20px;
   background: linear-gradient(180deg, rgba(1, 132, 149, 0) 0%, #018394 100%);
   opacity: 0.7;
 }
 
 .header {
-  margin-top: 28px;
-  margin-bottom: 170px;
-  display: flex;
+  padding-top: 28px;
+  margin-bottom: 45px;
 }
-.header__nav {
+.header .container {
+  display: flex;
+  align-items: center;
+}
+.header .container .header__nav {
   margin-left: 95px;
   display: flex;
 }
-.header__nav .hlist {
+.header .container .header__nav .hlist {
   display: none;
 }
-.header__nav .hlist-mobile {
+.header .container .header__nav .hlist-mobile {
   display: flex;
   gap: 30px;
+}
+
+.hero__overlay {
+  background-image: url(../images/hero-background-m-1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: linear-gradient(193deg, rgba(0, 0, 0, 0.31) 0%, rgba(0, 0, 0, 0.29) 100%), url(../images/hero-background-m-2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__overlay {
+    background-image: linear-gradient(193deg, rgba(0, 0, 0, 0.31) 0%, rgba(0, 0, 0, 0.29) 100%), url(../images/hero-background-td-1x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: linear-gradient(193deg, rgba(0, 0, 0, 0.31) 0%, rgba(0, 0, 0, 0.29) 100%), url(../images/hero-background-td-2x.jpg);
+  }
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: column;
+}
+.hero__title {
+  font-family: var(--second-family);
+  font-weight: 900;
+  font-size: 58px;
+  line-height: 108%;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+.hero__button {
+  border-radius: 108px;
+  padding: 10px;
+  width: 100%;
+  height: 59px;
+  background: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 54px;
+}
+.hero .herolist {
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.6);
+  width: 314px;
+  height: 472px;
+  margin: 0 auto;
+  padding: 32px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.hero .herolist__item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.hero .herolist__item__number {
+  font-family: var(--second-family);
+  font-weight: 900;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+.hero .herolist__item__title {
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--white);
+}
+.hero .herolist__item__description {
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: #939393;
+}
+.hero .video-container {
+  width: 314px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  position: relative;
+  background-image: url(../images/hero-video-m-1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero .video-container {
+    background-image: url(../images/hero-video-m-2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero .video-container {
+    background-image: url(../images/hero-video-td-1x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero .video-container {
+    background-image: url(../images/hero-video-td-2x.jpg);
+  }
+}
+.hero .video-container__circle {
+  position: absolute;
+  top: 34%;
+  left: 40%;
+  width: 58px;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: var(--white);
+}
+.hero__vertical {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

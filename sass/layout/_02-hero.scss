@@ -1,0 +1,155 @@
+.hero__overlay {
+    // max-height: 1104px;
+    background-image: url(../images/hero-background-m-1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image:
+            linear-gradient(193deg, rgba(0, 0, 0, 0.31) 0%, rgba(0, 0, 0, 0.29) 100%),
+            url(../images/hero-background-m-2x.jpg);
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image:
+            linear-gradient(193deg, rgba(0, 0, 0, 0.31) 0%, rgba(0, 0, 0, 0.29) 100%),
+            url(../images/hero-background-td-1x.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image:
+                linear-gradient(193deg, rgba(0, 0, 0, 0.31) 0%, rgba(0, 0, 0, 0.29) 100%),
+                url(../images/hero-background-td-2x.jpg);
+        }
+
+    }
+}
+
+.hero {
+    .container {
+        @include flex;
+        flex-direction: column;
+
+
+    }
+
+    &__title {
+        font-family: var(--second-family);
+        font-weight: 900;
+        font-size: 58px;
+        line-height: 108%;
+        text-transform: uppercase;
+        color: var(--white);
+        margin-bottom: 12px;
+    }
+
+    &__button {
+        @include button(100%, 59px, 108px);
+        margin-bottom: 54px;
+    }
+
+    .herolist {
+        border: 1px solid rgba(0, 0, 0, 0.6);
+        background: rgba(0, 0, 0, 0.6);
+        width: 314px;
+        height: 472px;
+        // opacity: 0.6;
+        margin: 0 auto;
+        padding: 32px;
+        padding-top: 35px;
+        padding-bottom: 30px;
+        @include flex;
+        flex-direction: column;
+        gap: 32px;
+
+        &__item {
+            @include flex;
+            flex-direction: column;
+            gap: 4px;
+
+            &__number {
+                font-family: var(--second-family);
+                font-weight: 900;
+                font-size: 16px;
+                text-transform: uppercase;
+                color: var(--main-color);
+            }
+
+            &__title {
+                font-weight: 700;
+                font-size: 26px;
+                color: var(--white);
+            }
+
+            &__description {
+                font-size: 16px;
+                line-height: 150%;
+                letter-spacing: 0.03em;
+                color: #939393;
+            }
+        }
+    }
+
+    .video-container {
+        width: 314px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        position: relative;
+        background-image: url(../images/hero-video-m-1x.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image:
+
+                url(../images/hero-video-m-2x.jpg);
+        }
+
+        @media screen and (min-width: 768px) {
+            background-image:
+
+                url(../images/hero-video-td-1x.jpg);
+
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image:
+
+                    url(../images/hero-video-td-2x.jpg);
+            }
+
+        }
+
+        &__circle {
+            position: absolute;
+            top: 34%;
+            left: 40%;
+            width: 58px;
+            height: 58px;
+            @include flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            background-color: var(--white);
+            // fill: var(--white);
+            // stroke-width: 1px;
+            // stroke: var(--white);
+            // box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    &__vertical {
+        display: none;
+    }
+}

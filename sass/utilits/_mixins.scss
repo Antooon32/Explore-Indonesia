@@ -1,0 +1,48 @@
+@mixin flex {
+    display: flex;
+}
+
+@mixin button($w, $h, $r) {
+    border-radius: $r;
+    padding: 10px;
+    width: $w;
+    height: $h;
+    background: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+@mixin background($url) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image:
+            url(../images/hero-background-m-2x.jpg);
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image:
+            url(../images/hero-background-td-1x.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image:
+                url(../images/hero-background-td-2x.jpg);
+        }
+
+    }
+}

@@ -1,21 +1,26 @@
 .header {
-    margin-top: 28px;
-    margin-bottom: 170px;
-    display: flex;
+    padding-top: 28px;
+    margin-bottom: 45px;
+    // display: flex;
 
-    &__nav {
-        margin-left: 95px;
-        display: flex;
+    .container {
+        @include flex;
+        align-items: center;
 
-        .hlist {
-            display: none;
-        }
-
-        .hlist-mobile {
+        .header__nav {
+            margin-left: 95px;
             display: flex;
-            gap: 30px;
 
-            
+            .hlist {
+                display: none;
+            }
+
+            .hlist-mobile {
+                display: flex;
+                gap: 30px;
+
+
+            }
         }
     }
 }
