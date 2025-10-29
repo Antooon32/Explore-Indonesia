@@ -20,7 +20,373 @@
 </head>
 
 <body>
+    <div class="hero__overlay">
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <svg class="logo__svg" width="25px" height="49px">
+                        <use href="./images/symboldefs.svg#rose"></use>
+                    </svg>
+                    <div class="logo__text">
+                        Explore
+                        Indonesia
+                    </div>
+                    <div class="logo__rectangle"></div>
+                </div>
+                <nav class="header__nav">
+                    <ul class="hlist">
+                        <li class="hlist__item"><a class="hlist__link" href="#">destinations</a></li>
+                        <li class="hlist__item"><a class="hlist__link" href="#">experiences</a></li>
+                        <li class="hlist__item"><a class="hlist__link" href="#">about</a></li>
+                        <li class="hlist__item"><a class="hlist__link" href="#">gallery</a></li>
+                    </ul>
+                    <ul class="hlist-mobile">
+                        <li class="hlist-mobile__item">
+                            <button class="hlist-mobile__button">
+                                <svg class="logo__svg" width="24px" height="24px">
+                                    <use href="./images/symboldefs.svg#magnifier"></use>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="hlist-mobile__item">
+                            <button class="burger-menu__open" data-burger-open>
+                                <svg width="26px" height="24px">
+                                    <use href="./images/symboldefs.svg#burger"></use>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">explore indonesia</h1>
+                <button class="hero__button">Start travelling</button>
 
+                <ul class="herolist">
+                    <li class="herolist__item">
+                        <p class="herolist__item__number">01</p>
+                        <h3 class="herolist__item__title">Title here</h3>
+                        <p class="herolist__item__description">Lorem ipsum dolor sit amet et amet ist ame.</p>
+                    </li>
+                    <li class="herolist__item">
+                        <p class="herolist__item__number">02</p>
+                        <h3 class="herolist__item__title">Title here</h3>
+                        <p class="herolist__item__description">Lorem ipsum dolor sit amet et amet ist ame.</p>
+                    </li>
+                    <li class="herolist__item">
+                        <p class="herolist__item__number">03</p>
+                        <h3 class="herolist__item__title">Title here</h3>
+                        <p class="herolist__item__description">Lorem ipsum dolor sit amet et amet ist ame.</p>
+                    </li>
+                </ul>
+
+                <div class="video-container">
+                    <video id="myVideo" preload="metadata">
+                        <source src="#" type="video/mp4">
+                    </video>
+
+                    <button id="playButton" class="video-container__play-button">
+                        <div class="video-container__circle">
+                            <svg class="video-container__svg" width="21px" height="26px">
+                                <use href="./images/symboldefs.svg#play"></use>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="hero__vertical">
+                    <div class="hero__vertical__1rectangle"></div>
+                    <div class="hero__vertical__2rectangle"></div>
+                    <p class="hero__vertical__number">01</p>
+
+                    <ul class="sociallist">
+                        <li class="sociallist__item">
+                            <a class="sociallist__link" href="#">Tw</a>
+                        </li>
+                        <li class="sociallist__item">
+                            <a class="sociallist__link" href="#">In</a>
+                        </li>
+                        <li class="sociallist__item">
+                            <a class="sociallist__link" href="#">Fb</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <main>
+        <section class="walkways">
+            <div class="walkways__overlay1">
+                <div class="container">
+                    <picture>
+                        <source srcset="./images/walkways-td-1x.jpg    1x,
+                                ./images/walkways-td-2x.jpg    2x" media="(min-width: 768px)">
+                        <source srcset="./images/walkways-m-1x.jpg    1x,
+                                ./images/walkways-m-2x.jpg    2x" media="(min-width: 375px)">
+                        <img src="./images/walkways-m-2x.jpg" alt="walkways">
+                    </picture>
+
+                    <h3 class="walkways__title">The walkways of Indonesia spellbind</h3>
+                    <p class="walkways__description">Lorem ipsum dolor sit amet, consectetur adip iscing elit.
+                        Fusce commodo magna et libero mollis rhoncus. </p>
+                    <button class="walkways__button">Learn More</button>
+                </div>
+            </div>
+            <div class="walkways__overlay2">
+                <div class="container">
+                    <h3 class="walkways__title">Perfect beaches exude relaxation and fun</h3>
+                    <p class="walkways__description">Lorem ipsum dolor sit amet, consectetur adip iscing elit.
+                        Fusce commodo magna et libero mollis rhoncus. </p>
+                    <button class="walkways__button">Learn More</button>
+
+                    <picture>
+                        <source srcset="./images/beaches-td-1x.jpg    1x,
+                                ./images/beaches-td-2x.jpg    2x" media="(min-width: 768px)">
+                        <source srcset="./images/beaches-m-1x.jpg    1x,
+                                ./images/beaches-m-2x.jpg    2x" media="(min-width: 375px)">
+                        <img src="./images/beaches-m-2x.jpg" alt="beaches">
+                    </picture>
+                </div>
+            </div>
+        </section>
+        <div class="explore__overlay">
+            <section class="explore">
+                <div class="container">
+                    <h2 class="explore__title">Explore Our Secrets</h2>
+                    <div class="slider">
+                        <ul class="slider-list">
+                            <li class="slider-list__item">
+                                <picture class="slider-list__item__content">
+                                    <source srcset="./images/explore-01-td-1x.jpg    1x,
+                                ./images/explore-01-td-2x.jpg    2x">
+                                    <img src="./images/explore-01-td-2x.jpg" alt="explore-01">
+                                </picture>
+                            </li>
+                            <li class="slider-list__item">
+                                <picture class="slider-list__item__content">
+                                    <source srcset="./images/explore-02-td-1x.jpg    1x,
+                                ./images/explore-02-td-2x.jpg    2x">
+                                    <img src="./images/explore-02-td-2x.jpg" alt="explore-02">
+                                </picture>
+                            </li>
+                            <li class="slider-list__item">
+                                <picture class="slider-list__item__content">
+                                    <source srcset="./images/explore-03-td-1x.jpg    1x,
+                                ./images/explore-03-td-2x.jpg    2x">
+                                    <img src="./images/explore-03-td-2x.jpg" alt="explore-03">
+                                </picture>
+                            </li>
+                            <li class="slider-list__item">
+                                <picture class="slider-list__item__content">
+                                    <source srcset="./images/explore-04-m-1x.jpg    1x,
+                                ./images/explore-04-m-2x.jpg    2x">
+                                    <img src="./images/explore-04-m-2x.jpg" alt="explore-04">
+                                </picture>
+                            </li>
+                            <li class="slider-list__item">
+                                <picture class="slider-list__item__content">
+                                    <source srcset="./images/explore-01-td-1x.jpg    1x,
+                                ./images/explore-01-td-2x.jpg    2x">
+                                    <img src="./images/explore-01-td-2x.jpg" alt="explore-01">
+                                </picture>
+                            </li>
+                            <li class="slider-list__item">
+                                <picture class="slider-list__item__content">
+                                    <source srcset="./images/explore-02-td-1x.jpg    1x,
+                                ./images/explore-02-td-2x.jpg    2x">
+                                    <img src="./images/explore-02-td-2x.jpg" alt="explore-02">
+                                </picture>
+                            </li>
+                            <li class="slider-list__item">
+                                <picture class="slider-list__item__content">
+                                    <source srcset="./images/explore-03-td-1x.jpg    1x,
+                                ./images/explore-03-td-2x.jpg    2x">
+                                    <img src="./images/explore-03-td-2x.jpg" alt="explore-03">
+                                </picture>
+                            </li>
+                            <li class="slider-list__item">
+                                <picture class="slider-list__item__content">
+                                    <source srcset="./images/explore-04-m-1x.jpg    1x,
+                                ./images/explore-04-m-2x.jpg    2x">
+                                    <img src="./images/explore-04-m-2x.jpg" alt="explore-04">
+                                </picture>
+                            </li>
+                            <li class="slider-list__item">
+                                <picture class="slider-list__item__content">
+                                    <source srcset="./images/explore-01-td-1x.jpg    1x,
+                                ./images/explore-01-td-2x.jpg    2x">
+                                    <img src="./images/explore-01-td-2x.jpg" alt="explore-01">
+                                </picture>
+                            </li>
+                            <li class="slider-list__item">
+                                <picture class="slider-list__item__content">
+                                    <source srcset="./images/explore-02-td-1x.jpg    1x,
+                                ./images/explore-02-td-2x.jpg    2x">
+                                    <img src="./images/explore-02-td-2x.jpg" alt="explore-02">
+                                </picture>
+                            </li>
+                            <li class="slider-list__item">
+                                <picture class="slider-list__item__content">
+                                    <source srcset="./images/explore-03-td-1x.jpg    1x,
+                                ./images/explore-03-td-2x.jpg    2x">
+                                    <img src="./images/explore-03-td-2x.jpg" alt="explore-03">
+                                </picture>
+                            </li>
+                            <li class="slider-list__item">
+                                <picture class="slider-list__item__content">
+                                    <source srcset="./images/explore-04-m-1x.jpg    1x,
+                                ./images/explore-04-m-2x.jpg    2x">
+                                    <img src="./images/explore-04-m-2x.jpg" alt="explore-04">
+                                </picture>
+                            </li>
+                            <li class="slider-list__item">
+                                <picture class="slider-list__item__content">
+                                    <source srcset="./images/explore-01-td-1x.jpg    1x,
+                                ./images/explore-01-td-2x.jpg    2x">
+                                    <img src="./images/explore-01-td-2x.jpg" alt="explore-01">
+                                </picture>
+                            </li>
+                            <li class="slider-list__item">
+                                <picture class="slider-list__item__content">
+                                    <source srcset="./images/explore-02-td-1x.jpg    1x,
+                                ./images/explore-02-td-2x.jpg    2x">
+                                    <img src="./images/explore-02-td-2x.jpg" alt="explore-02">
+                                </picture>
+                            </li>
+                            <li class="slider-list__item">
+                                <picture class="slider-list__item__content">
+                                    <source srcset="./images/explore-03-td-1x.jpg    1x,
+                                ./images/explore-03-td-2x.jpg    2x">
+                                    <img src="./images/explore-03-td-2x.jpg" alt="explore-03">
+                                </picture>
+                            </li>
+                        </ul>
+
+                        <ul class="slider-buttons-list">
+                            <li class="slider-buttons-list__item">
+                                <button class="slider-buttons-list__item--left" type="button" data-slider-prevBtn
+                                    id="prevBtn">
+                                    <svg width="15px" height="24px">
+                                        <use href="./images/symboldefs.svg#left"></use>
+                                    </svg>
+                                </button>
+                            </li>
+                            <li class="slider-buttons-list__item">
+                                <button class="slider-buttons-list__item--right" type="button" data-slider-prevBtn
+                                    id="prevBtn">
+                                    <svg width="15px" height="24px">
+                                        <use href="./images/symboldefs.svg#right"></use>
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+
+                        <ul class="slider-pagination-list">
+                            <li class="slider-pagination-list__item" id="1" data-slider-pagination-1></li>
+                            <li class="slider-pagination-list__item" id="2" data-slider-pagination-2></li>
+                            <li class="slider-pagination-list__item" id="3" data-slider-pagination-3></li>
+                            <li class="slider-pagination-list__item" id="4" data-slider-pagination-4></li>
+                            <li class="slider-pagination-list__item" id="5" data-slider-pagination-5></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="numbers">
+                <div class="container">
+                    <h2 class="numbers__title">By The Numbers</h2>
+                    <p class="numbers__description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Fusce commodo magna et
+                        libero.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                    <ul class="nlist">
+                        <li class="nlist__item">
+                            <h3 class="nlist__title">100+</h3>
+                            <p class="nlist__description">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Fusce commodo magna et libero.</p>
+                        </li>
+                        <li class="nlist__item">
+                            <h3 class="nlist__title">43,000+</h3>
+                            <p class="nlist__description">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Fusce commodo.</p>
+                        </li>
+                        <li class="nlist__item">
+                            <h3 class="nlist__title">30+</h3>
+                            <p class="nlist__description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Fusce commodo magna et libero.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <section class="hills">
+            <div class="container">
+                <h2 class="hills__title">Our hills and valleys are like nothing you’ve seen.</h2>
+                <p class="hills__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet
+                    magna commodo, tempus dolor sit amet, laoreet elit. Donec mauris tortor.</p>
+                <button class="hills__button">Learn More</button>
+            </div>
+        </section>
+        <section class="life">
+            <div class="container">
+                <h2 class="life__title"></h2>
+                <div class="video-container video-container2">
+                    <video id="myVideo" preload="metadata">
+                        <source src="#" type="video/mp4">
+                    </video>
+
+                    <button id="playButton" class="video-container__play-button">
+                        <div class="video-container__circle2">
+                            <svg class="video-container__svg2" width="21px" height="26px">
+                                <use href="./images/symboldefs.svg#play"></use>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+                <ul class="lifelist">
+                    <li class="lifelist__item">
+                        <picture>
+                            <source srcset="./images/country-td-1x.jpg    1x,
+                                ./images/country-td-2x.jpg    2x" media="(min-width: 768px)">
+                            <source srcset="./images/country-m-1x.jpg    1x,
+                                ./images/country-m-2x.jpg    2x" media="(min-width: 375px)">
+                            <img src="./images/country-m-2x.jpg" alt="country">
+                        </picture>
+                        <h3 class="lifelist__title">In The Country</h3>
+                        <p class="lifelist__description">Lorem ipsum dolor sit amet, consectetur 
+                            adipiscing elit. 
+                            Phasellus dapibus mauris in lectus tempus.</p>
+                    </li>
+                    <li class="lifelist__item">
+                        <picture>
+                            <source srcset="./images/city-td-1x.jpg    1x,
+                                ./images/city-td-2x.jpg    2x" media="(min-width: 768px)">
+                            <source srcset="./images/city-m-1x.jpg    1x,
+                                ./images/city-m-2x.jpg    2x" media="(min-width: 375px)">
+                            <img src="./images/city-m-2x.jpg" alt="city">
+                        </picture>
+                        <h3 class="lifelist__title">In The City</h3>
+                        <p class="lifelist__description">Lorem ipsum dolor sit amet, consectetur 
+                            adipiscing elit. 
+                            Phasellus dapibus mauris in lectus tempus.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+
+        </section>
+        <section>
+
+        </section>
+        <section>
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
