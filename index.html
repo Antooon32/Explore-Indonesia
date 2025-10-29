@@ -321,11 +321,14 @@
             </section>
         </div>
         <section class="hills">
-            <div class="container">
-                <h2 class="hills__title">Our hills and valleys are like nothing you’ve seen.</h2>
-                <p class="hills__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet
-                    magna commodo, tempus dolor sit amet, laoreet elit. Donec mauris tortor.</p>
-                <button class="hills__button">Learn More</button>
+            <div class="hills__overlay">
+                <div class="container">
+                    <h2 class="hills__title">Our hills and valleys are like nothing you’ve seen.</h2>
+                    <p class="hills__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit
+                        amet
+                        magna commodo, tempus dolor sit amet, laoreet elit. Donec mauris tortor.</p>
+                    <button class="hills__button">Learn More</button>
+                </div>
             </div>
         </section>
         <section class="life">
@@ -354,8 +357,8 @@
                             <img src="./images/country-m-2x.jpg" alt="country">
                         </picture>
                         <h3 class="lifelist__title">In The Country</h3>
-                        <p class="lifelist__description">Lorem ipsum dolor sit amet, consectetur 
-                            adipiscing elit. 
+                        <p class="lifelist__description">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit.
                             Phasellus dapibus mauris in lectus tempus.</p>
                     </li>
                     <li class="lifelist__item">
@@ -367,25 +370,165 @@
                             <img src="./images/city-m-2x.jpg" alt="city">
                         </picture>
                         <h3 class="lifelist__title">In The City</h3>
-                        <p class="lifelist__description">Lorem ipsum dolor sit amet, consectetur 
-                            adipiscing elit. 
+                        <p class="lifelist__description">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit.
                             Phasellus dapibus mauris in lectus tempus.</p>
                     </li>
                 </ul>
             </div>
         </section>
-        <section>
-
+        <section class="gallery">
+            <div class="container">
+                <h2 class="gallery__title">Photo Gallery</h2>
+                <p class="gallery__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                    dapibus mauris in lectus tempus, eget tincidunt.</p>
+                <ul class="gallery-list">
+                    <li class="gallery-list__item">
+                        <picture>
+                            <source srcset="./images/gallery-01-td-1x.jpg    1x,
+                                ./images/gallery-01-td-2x.jpg    2x" media="(min-width: 768px)">
+                            <source srcset="./images/gallery-01-m-1x.jpg    1x,
+                                ./images/gallery-01-m-2x.jpg    2x" media="(min-width: 375px)">
+                            <img src="./images/gallery-01-m-2x.jpg" alt="gallery-01">
+                        </picture>
+                    </li>
+                    <li class="gallery-list__item">
+                        <picture>
+                            <source srcset="./images/gallery-02-td-1x.jpg    1x,
+                                ./images/gallery-02-td-2x.jpg    2x" media="(min-width: 768px)">
+                            <source srcset="./images/gallery-02-m-1x.jpg    1x,
+                                ./images/gallery-02-m-2x.jpg    2x" media="(min-width: 375px)">
+                            <img src="./images/gallery-02-m-2x.jpg" alt="gallery-02">
+                        </picture>
+                    </li>
+                    <li class="gallery-list__item">
+                        <picture>
+                            <source srcset="./images/gallery-03-td-1x.jpg    1x,
+                                ./images/gallery-03-td-2x.jpg    2x" media="(min-width: 768px)">
+                            <source srcset="./images/gallery-03-m-1x.jpg    1x,
+                                ./images/gallery-03-m-2x.jpg    2x" media="(min-width: 375px)">
+                            <img src="./images/gallery-03-m-2x.jpg" alt="gallery-03">
+                        </picture>
+                    </li>
+                    <li class="gallery-list__item">
+                        <picture>
+                            <source srcset="./images/gallery-04-td-1x.jpg    1x,
+                                ./images/gallery-04-td-2x.jpg    2x" media="(min-width: 768px)">
+                            <source srcset="./images/gallery-04-m-1x.jpg    1x,
+                                ./images/gallery-04-m-2x.jpg    2x" media="(min-width: 375px)">
+                            <img src="./images/gallery-04-m-2x.jpg" alt="gallery-04">
+                        </picture>
+                    </li>
+                    <li class="gallery-list__item">
+                        <picture>
+                            <source srcset="./images/gallery-05-td-1x.jpg    1x,
+                                ./images/gallery-05-td-2x.jpg    2x" media="(min-width: 768px)">
+                            <source srcset="./images/gallery-05-m-1x.jpg    1x,
+                                ./images/gallery-05-m-2x.jpg    2x" media="(min-width: 375px)">
+                            <img src="./images/gallery-05-m-2x.jpg" alt="gallery-05">
+                        </picture>
+                    </li>
+                    <li class="gallery-list__item">
+                        <picture>
+                            <source srcset="./images/gallery-06-td-1x.jpg    1x,
+                                ./images/gallery-06-td-2x.jpg    2x" media="(min-width: 768px)">
+                            <source srcset="./images/gallery-06-m-1x.jpg    1x,
+                                ./images/gallery-06-m-2x.jpg    2x" media="(min-width: 375px)">
+                            <img src="./images/gallery-06-m-2x.jpg" alt="gallery-06">
+                        </picture>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <section>
-
-        </section>
-        <section>
-
+        <section class="getting">
+            <div class="container">
+                <h2 class="getting__title">Getting there</h2>
+                <ul class="getting-list">
+                    <li class="getting-list__item">
+                        <p class="getting-list__number">1</p>
+                        <h3 class="getting-list__title">Bookings your flights</h3>
+                        <p class="getting-list__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus varius. Sed euismod orci
+                            dictum faucibus malesuada. Praesent sed eros tincidunt, viverra neque auctor, lobortis enim.
+                        </p>
+                    </li>
+                    <li class="getting-list__item">
+                        <p class="getting-list__number">2</p>
+                        <h3 class="getting-list__title">Choosing your hotel</h3>
+                        <p class="getting-list__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus varius. Sed euismod orci
+                            dictum faucibus malesuada. Praesent sed eros tincidunt, viverra neque auctor, lobortis enim.
+                        </p>
+                        <picture>
+                            <source srcset="./images/travelling-td-1x.jpg    1x,
+                                ./images/travelling-td-2x.jpg    2x" media="(min-width: 768px)">
+                            <source srcset="./images/travelling-m-1x.jpg    1x,
+                                ./images/travelling-m-2x.jpg    2x" media="(min-width: 375px)">
+                            <img src="./images/travelling-m-2x.jpg" alt="travelling">
+                        </picture>
+                        <h3 class="getting-list__title">Travelling there</h3>
+                        <p class="getting-list__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus dapibus mauris in lectus tempus, eget tincidunt. </p>
+                    </li>
+                    <li class="getting-list__item">
+                        <h3 class="getting-list__title">Planning your experiences</h3>
+                        <p class="getting-list__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus varius.
+                    </li>
+                </ul>
+                <button class="getting__button">Learn More</button>
+            </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <div class="container">
+            <div class="logo">
+                <svg class="logo__svg" width="25px" height="49px">
+                    <use href="./images/symboldefs.svg#rose"></use>
+                </svg>
+                <div class="logo__text">
+                    Explore
+                    Indonesia
+                </div>
+            </div>
+            <address class="address">
+                <ul class="address-list">
+                    <li class="address-list__item"><a href="#" class="address-list__link">About</a></li>
+                    <li class="address-list__item"><a href="#" class="address-list__link">Pricing</a></li>
+                    <li class="address-list__item"><a href="#" class="address-list__link">Company</a></li>
+                    <li class="address-list__item"><a href="#" class="address-list__link">Blog</a></li>
+                </ul>
+                <ul class="address-social-list">
+                    <li class="address-social-list__item">
+                        <a href="#" class="address-social-list__link">
+                            <svg width="24px" height="24px">
+                                <use href="./images/symboldefs.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="address-social-list__item">
+                        <a href="#" class="address-social-list__link">
+                            <svg width="16px" height="16px">
+                                <use href="./images/symboldefs.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="address-social-list__item">
+                        <a href="#" class="address-social-list__link">
+                            <svg width="24px" height="24px">
+                                <use href="./images/symboldefs.svg#google"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </address>
+            <p class="footer__copyright">Copyright © 2019</p>
+            <a class="footer__top-link">
+                <svg width="39px" height="22px">
+                    <use href="./images/symboldefs.svg#top"></use>
+                </svg>
+            </a>
+        </div>
     </footer>
 </body>
 
