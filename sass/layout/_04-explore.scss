@@ -1,5 +1,4 @@
-$primary-color: #f72c45;
-$dot-inactive-color: #a0a8b3; // Цвет неактивной точки пагинации
+
 
 .explore__overlay {
     background-image: url(../images/explore-background-m-1x.jpg);
@@ -50,7 +49,7 @@ $dot-inactive-color: #a0a8b3; // Цвет неактивной точки паг
     .slider {
         overflow-x: hidden;
         // position: relative;
-        width: 314px; // Примерная ширина слайдера по картинке
+        width: 314px; 
         margin: 0 auto;
         // padding: 20px;
         box-sizing: border-box;
@@ -59,34 +58,29 @@ $dot-inactive-color: #a0a8b3; // Цвет неактивной точки паг
 
     .slider-list {
         display: flex;
-        overflow: hidden; // Скрываем лишние слайды
+        overflow: hidden; 
         gap: 30px;
         padding: 0;
         margin: 0;
-        // list-style: none;
-        // Контейнер для всех слайдов. Будет двигаться JS-ом.
         transition: transform 0.5s ease-in-out;
-
-        // Элемент, который будет растягиваться на всю ширину slider-list
-        // и содержать все слайды в ряд
         width: 1496px;
     }
 
     .slider-list__item {
-        flex-shrink: 0; // Важно, чтобы слайды не сжимались
-        width: 314px; // Каждый слайд занимает 100% ширины видимой области
+        flex-shrink: 0; 
+        width: 314px; 
         border-radius: 8px;
 
         &__content {
-            display: block; // <picture> как блок
-            line-height: 0; // Убрать лишний отступ под изображением
+            display: block; 
+            line-height: 0; 
 
             img {
                 width: 100%;
                 height: auto;
                 display: block;
                 border-radius: 8px;
-                object-fit: cover; // Гарантирует, что изображение покроет контейнер
+                object-fit: cover; 
             }
         }
     }
@@ -115,15 +109,15 @@ $dot-inactive-color: #a0a8b3; // Цвет неактивной точки паг
         &__item {
             width: 10px;
             height: 10px;
-            background-color: $dot-inactive-color;
+            background-color: var(--dot-inactive-color);
             border-radius: 50%;
             cursor: pointer;
             transition: background-color 0.3s ease;
 
-            // Модификатор для активной точки
+            
             &--active {
-                background-color: $primary-color;
-                width: 30px; // Удлиняем активную точку, как на изображении
+                background-color: var(--primary-color);
+                width: 30px; 
                 border-radius: 5px;
             }
         }

@@ -1,0 +1,53 @@
+.hills {
+    background-image: url(../images/hills-background-m-01.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 171px;
+
+    @media screen and (min-width: 768px) {
+        background-image:
+
+            url(../images/hills-background-td-01.svg);
+    }
+
+    &__overlay {
+        background-image: url(../images/hills-background-m-02.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media screen and (min-width: 768px) {
+            background-image:
+
+                url(../images/hills-background-td-02.svg);
+
+        }
+    }
+
+    .container {
+        @include flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 115%;
+        text-align: center;
+        color: #000;
+        margin-bottom: 36px;
+    }
+
+    &__description {
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: var(--paragraph-dark);
+        margin-bottom: 41px
+    }
+
+    &__button {
+        @include button(100%, 73px, 122px);
+        margin-bottom: 116px;
+    }
+}

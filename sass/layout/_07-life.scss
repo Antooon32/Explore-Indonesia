@@ -1,0 +1,136 @@
+.life {
+    padding-top: 83px;
+    background-color: var(--blue---background);
+    background-image: url(../images/life-background-m-1x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image:
+
+            url(../images/life-background-m-2x.png);
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image:
+
+            url(../images/life-background-td-1x.png);
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image:
+
+                url(../images/life-background-td-2x.png);
+        }
+
+    }
+
+    .container {
+        @include flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 115%;
+        text-align: center;
+        color: var(--white);
+        margin-bottom: 110px;
+    }
+
+    .video-container2 {
+        width: 314px;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        position: relative;
+        background-image: url(../images/life-video-m-1x.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image:
+
+                url(../images/life-video-m-2x.jpg);
+        }
+
+        @media screen and (min-width: 768px) {
+            background-image:
+
+                url(../images/life-video-td-1x.jpg);
+
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image:
+
+                    url(../images/life-video-td-2x.jpg);
+            }
+
+        }
+
+        &__circle2 {
+            position: absolute;
+            top: 34%;
+            left: 40%;
+            width: 58px;
+            height: 58px;
+            @include flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            background-color: #e93a7d;
+
+            // fill: var(--white);
+            // stroke-width: 1px;
+            // stroke: var(--white);
+            // box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.5);
+        }
+
+        &__svg2 {
+            fill: var(--white);
+        }
+    }
+
+    .lifelist {
+        &__picture {
+            display: block;
+            width: 314px;
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+
+        &__title {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 150%;
+            text-align: center;
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        &__description {
+            font-size: 16px;
+            line-height: 150%;
+            letter-spacing: 0.03em;
+            text-align: center;
+            color: var(--white);
+            margin-bottom: 37px;
+        }
+    }
+}
