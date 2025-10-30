@@ -1,0 +1,54 @@
+.numbers {
+    background: #020c21;
+    opacity: 0.9;
+    padding: 70px 0;
+
+    .container {
+        @include flex;
+        flex-direction: column;
+        gap: 57px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 115%;
+        text-align: center;
+        color: var(--white);
+    }
+
+    &__description {
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.03em;
+        text-align: center;
+    }
+
+    .nlist {
+        @include flex;
+        flex-direction: column;
+        gap: 80px;
+
+        &__item {
+            @include flex;
+            flex-direction: column;
+            gap: 5px;
+
+        }
+
+        &__title {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 115%;
+            text-align: center;
+            color: var(--main-color);
+        }
+
+        &__description {
+            font-size: 16px;
+            line-height: 150%;
+            letter-spacing: 0.03em;
+            text-align: center;
+        }
+    }
+}

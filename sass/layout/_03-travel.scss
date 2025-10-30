@@ -1,0 +1,117 @@
+.walkways {
+    // padding: 40px 30px;
+    background-image: url(../images/overlay.svg);
+    background-color: var(--blue---background);
+
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 115%;
+        color: var(--white);
+    }
+
+    &__description {
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.03em;
+        color: var(--text-lighten);
+    }
+
+    &__button {
+        @include button(100%, 72px, 32px);
+    }
+
+    &__overlay1 {
+        padding-top: 40px;
+        margin-bottom: 56px;
+        background-image: url(../images/walkways-background-m-1x.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image:
+
+                url(../images/walkways-background-m-2x.png);
+        }
+
+        @media screen and (min-width: 768px) {
+            background-image:
+
+                url(../images/walkways-background-td-1x.png);
+
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image:
+
+                    url(../images/walkways-background-td-2x.png);
+            }
+
+        }
+
+        .container {
+            @include flex;
+            flex-direction: column;
+            gap: 30px;
+
+
+        }
+    }
+
+    &__overlay2 {
+        padding-bottom: 48px;
+        background-image: url(../images/beaches-background-m-1x.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image:
+
+                url(../images/beaches-background-m-2x.png);
+        }
+
+        @media screen and (min-width: 768px) {
+            background-image:
+
+                url(../images/beaches-background-td-1x.png);
+
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image:
+
+                    url(../images/beaches-background-td-2x.png);
+            }
+
+        }
+
+        .container {
+            @include flex;
+            flex-direction: column;
+            gap: 30px;
+
+            .walkways__picture {
+                order: -1;
+            }
+        }
+    }
+
+    &__picture {
+        display: block;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 0 auto;
+        width: 314px;
+        // height: 232px;
+    }
+}

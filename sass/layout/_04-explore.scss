@@ -1,0 +1,131 @@
+$primary-color: #f72c45;
+$dot-inactive-color: #a0a8b3; // Цвет неактивной точки пагинации
+
+.explore__overlay {
+    background-image: url(../images/explore-background-m-1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image:
+
+            url(../images/explore-background-m-2x.jpg);
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image:
+
+            url(../images/explore-background-td-1x.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image:
+
+                url(../images/explore-background-td-2x.jpg);
+        }
+
+    }
+}
+
+.explore {
+    padding-top: 25px;
+    position: relative;
+
+    &__title {
+        // margin-top: 25px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 115%;
+        text-align: center;
+        color: var(--blue---background);
+        margin-bottom: 23px;
+    }
+
+    .slider {
+        overflow-x: hidden;
+        // position: relative;
+        width: 314px; // Примерная ширина слайдера по картинке
+        margin: 0 auto;
+        // padding: 20px;
+        box-sizing: border-box;
+        margin-bottom: 695px;
+    }
+
+    .slider-list {
+        display: flex;
+        overflow: hidden; // Скрываем лишние слайды
+        gap: 30px;
+        padding: 0;
+        margin: 0;
+        // list-style: none;
+        // Контейнер для всех слайдов. Будет двигаться JS-ом.
+        transition: transform 0.5s ease-in-out;
+
+        // Элемент, который будет растягиваться на всю ширину slider-list
+        // и содержать все слайды в ряд
+        width: 1496px;
+    }
+
+    .slider-list__item {
+        flex-shrink: 0; // Важно, чтобы слайды не сжимались
+        width: 314px; // Каждый слайд занимает 100% ширины видимой области
+        border-radius: 8px;
+
+        &__content {
+            display: block; // <picture> как блок
+            line-height: 0; // Убрать лишний отступ под изображением
+
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+                border-radius: 8px;
+                object-fit: cover; // Гарантирует, что изображение покроет контейнер
+            }
+        }
+    }
+
+    .slider-buttons-list {
+        position: absolute;
+        width: 367px;
+        top: 63%;
+        left: 3.5px;
+        right: 0;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+    }
+
+    .slider-pagination-list {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+        padding: 0;
+        list-style: none;
+
+        &__item {
+            width: 10px;
+            height: 10px;
+            background-color: $dot-inactive-color;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            // Модификатор для активной точки
+            &--active {
+                background-color: $primary-color;
+                width: 30px; // Удлиняем активную точку, как на изображении
+                border-radius: 5px;
+            }
+        }
+    }
+}

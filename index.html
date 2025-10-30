@@ -120,7 +120,7 @@
         <section class="walkways">
             <div class="walkways__overlay1">
                 <div class="container">
-                    <picture>
+                    <picture class="walkways__picture">
                         <source srcset="./images/walkways-td-1x.jpg    1x,
                                 ./images/walkways-td-2x.jpg    2x" media="(min-width: 768px)">
                         <source srcset="./images/walkways-m-1x.jpg    1x,
@@ -141,7 +141,7 @@
                         Fusce commodo magna et libero mollis rhoncus. </p>
                     <button class="walkways__button">Learn More</button>
 
-                    <picture>
+                    <picture class="walkways__picture">
                         <source srcset="./images/beaches-td-1x.jpg    1x,
                                 ./images/beaches-td-2x.jpg    2x" media="(min-width: 768px)">
                         <source srcset="./images/beaches-m-1x.jpg    1x,
@@ -153,9 +153,26 @@
         </section>
         <div class="explore__overlay">
             <section class="explore">
+
+                <ul class="slider-buttons-list">
+                    <button class="slider-buttons-list__button slider-buttons-list__button--prev" type="button"
+                        data-slider-prevBtn>
+                        <svg width="15px" height="24px">
+                            <use href="./images/symboldefs.svg#left"></use>
+                        </svg>
+                    </button>
+                    <button class="slider-buttons-list__button slider-buttons-list__button--next" type="button"
+                        data-slider-nextBtn>
+                        <svg width="15px" height="24px">
+                            <use href="./images/symboldefs.svg#right"></use>
+                        </svg>
+                    </button>
+                </ul>
+
                 <div class="container">
                     <h2 class="explore__title">Explore Our Secrets</h2>
                     <div class="slider">
+
                         <ul class="slider-list">
                             <li class="slider-list__item">
                                 <picture class="slider-list__item__content">
@@ -185,110 +202,13 @@
                                     <img src="./images/explore-04-m-2x.jpg" alt="explore-04">
                                 </picture>
                             </li>
-                            <li class="slider-list__item">
-                                <picture class="slider-list__item__content">
-                                    <source srcset="./images/explore-01-td-1x.jpg    1x,
-                                ./images/explore-01-td-2x.jpg    2x">
-                                    <img src="./images/explore-01-td-2x.jpg" alt="explore-01">
-                                </picture>
-                            </li>
-                            <li class="slider-list__item">
-                                <picture class="slider-list__item__content">
-                                    <source srcset="./images/explore-02-td-1x.jpg    1x,
-                                ./images/explore-02-td-2x.jpg    2x">
-                                    <img src="./images/explore-02-td-2x.jpg" alt="explore-02">
-                                </picture>
-                            </li>
-                            <li class="slider-list__item">
-                                <picture class="slider-list__item__content">
-                                    <source srcset="./images/explore-03-td-1x.jpg    1x,
-                                ./images/explore-03-td-2x.jpg    2x">
-                                    <img src="./images/explore-03-td-2x.jpg" alt="explore-03">
-                                </picture>
-                            </li>
-                            <li class="slider-list__item">
-                                <picture class="slider-list__item__content">
-                                    <source srcset="./images/explore-04-m-1x.jpg    1x,
-                                ./images/explore-04-m-2x.jpg    2x">
-                                    <img src="./images/explore-04-m-2x.jpg" alt="explore-04">
-                                </picture>
-                            </li>
-                            <li class="slider-list__item">
-                                <picture class="slider-list__item__content">
-                                    <source srcset="./images/explore-01-td-1x.jpg    1x,
-                                ./images/explore-01-td-2x.jpg    2x">
-                                    <img src="./images/explore-01-td-2x.jpg" alt="explore-01">
-                                </picture>
-                            </li>
-                            <li class="slider-list__item">
-                                <picture class="slider-list__item__content">
-                                    <source srcset="./images/explore-02-td-1x.jpg    1x,
-                                ./images/explore-02-td-2x.jpg    2x">
-                                    <img src="./images/explore-02-td-2x.jpg" alt="explore-02">
-                                </picture>
-                            </li>
-                            <li class="slider-list__item">
-                                <picture class="slider-list__item__content">
-                                    <source srcset="./images/explore-03-td-1x.jpg    1x,
-                                ./images/explore-03-td-2x.jpg    2x">
-                                    <img src="./images/explore-03-td-2x.jpg" alt="explore-03">
-                                </picture>
-                            </li>
-                            <li class="slider-list__item">
-                                <picture class="slider-list__item__content">
-                                    <source srcset="./images/explore-04-m-1x.jpg    1x,
-                                ./images/explore-04-m-2x.jpg    2x">
-                                    <img src="./images/explore-04-m-2x.jpg" alt="explore-04">
-                                </picture>
-                            </li>
-                            <li class="slider-list__item">
-                                <picture class="slider-list__item__content">
-                                    <source srcset="./images/explore-01-td-1x.jpg    1x,
-                                ./images/explore-01-td-2x.jpg    2x">
-                                    <img src="./images/explore-01-td-2x.jpg" alt="explore-01">
-                                </picture>
-                            </li>
-                            <li class="slider-list__item">
-                                <picture class="slider-list__item__content">
-                                    <source srcset="./images/explore-02-td-1x.jpg    1x,
-                                ./images/explore-02-td-2x.jpg    2x">
-                                    <img src="./images/explore-02-td-2x.jpg" alt="explore-02">
-                                </picture>
-                            </li>
-                            <li class="slider-list__item">
-                                <picture class="slider-list__item__content">
-                                    <source srcset="./images/explore-03-td-1x.jpg    1x,
-                                ./images/explore-03-td-2x.jpg    2x">
-                                    <img src="./images/explore-03-td-2x.jpg" alt="explore-03">
-                                </picture>
-                            </li>
                         </ul>
 
-                        <ul class="slider-buttons-list">
-                            <li class="slider-buttons-list__item">
-                                <button class="slider-buttons-list__item--left" type="button" data-slider-prevBtn
-                                    id="prevBtn">
-                                    <svg width="15px" height="24px">
-                                        <use href="./images/symboldefs.svg#left"></use>
-                                    </svg>
-                                </button>
-                            </li>
-                            <li class="slider-buttons-list__item">
-                                <button class="slider-buttons-list__item--right" type="button" data-slider-prevBtn
-                                    id="prevBtn">
-                                    <svg width="15px" height="24px">
-                                        <use href="./images/symboldefs.svg#right"></use>
-                                    </svg>
-                                </button>
-                            </li>
-                        </ul>
-
-                        <ul class="slider-pagination-list">
-                            <li class="slider-pagination-list__item" id="1" data-slider-pagination-1></li>
-                            <li class="slider-pagination-list__item" id="2" data-slider-pagination-2></li>
-                            <li class="slider-pagination-list__item" id="3" data-slider-pagination-3></li>
-                            <li class="slider-pagination-list__item" id="4" data-slider-pagination-4></li>
-                            <li class="slider-pagination-list__item" id="5" data-slider-pagination-5></li>
+                        <ul class="slider-pagination-list" data-pagination-container>
+                            <li class="slider-pagination-list__item" data-slide-to="0"></li>
+                            <li class="slider-pagination-list__item" data-slide-to="1"></li>
+                            <li class="slider-pagination-list__item" data-slide-to="2"></li>
+                            <li class="slider-pagination-list__item" data-slide-to="3"></li>
                         </ul>
                     </div>
                 </div>
@@ -530,6 +450,8 @@
             </a>
         </div>
     </footer>
+
+    <script src="./js/slider.js"></script>
 </body>
 
 </html>

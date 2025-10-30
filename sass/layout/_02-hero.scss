@@ -50,7 +50,7 @@
     }
 
     &__button {
-        @include button(100%, 59px, 108px);
+        @include button(100%, 59px, 108px, 0.8);
         margin-bottom: 54px;
     }
 

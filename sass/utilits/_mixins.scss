@@ -2,7 +2,7 @@
     display: flex;
 }
 
-@mixin button($w, $h, $r) {
+@mixin button($w, $h, $r, $c: 1) {
     border-radius: $r;
     padding: 10px;
     width: $w;
@@ -15,33 +15,28 @@
     font-size: 18px;
     line-height: 150%;
     text-align: center;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, $c);
 }
 
 @mixin background($url) {
-    background-image: url($url);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         background-image:
-            url(../images/hero-background-m-2x.jpg);
+            url($url);
     }
 
     @media screen and (min-width: 768px) {
         background-image:
-            url(../images/hero-background-td-1x.jpg);
+            url($url);
 
         @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image:
-                url(../images/hero-background-td-2x.jpg);
+                url($url);
         }
 
     }
