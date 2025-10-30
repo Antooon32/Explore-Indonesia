@@ -1,0 +1,48 @@
+.footer {
+    position: relative;
+    padding-top: 147px;
+    padding-bottom: 84px;
+    background-color: var(--blue---background);
+
+    .container {
+        @include flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 36px;
+    }
+
+    .address-list {
+        @include flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 36px;
+        margin-bottom: 36px;
+
+        &__link {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 156%;
+            letter-spacing: 0.03em;
+            color: var(--white);
+        }
+    }
+
+    .address-social-list {
+        @include flex;
+        gap: 48px;
+        // margin-bottom: 36px;
+    }
+
+    &__top-link {
+        width: 104px;
+        height: 104px;
+        @include flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -40px;
+        left: 133px;
+        background-color: var(--main-color);
+        border-radius: 100%;
+    }
+}

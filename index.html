@@ -21,7 +21,7 @@
 
 <body>
     <div class="hero__overlay">
-        <header class="header">
+        <header class="header" id="header">
             <div class="container">
                 <div class="logo">
                     <svg class="logo__svg" width="25px" height="49px">
@@ -367,19 +367,21 @@
                     <li class="getting-list__item">
                         <p class="getting-list__number">1</p>
                         <h3 class="getting-list__title">Bookings your flights</h3>
-                        <p class="getting-list__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <p class="getting-list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus varius. Sed euismod orci
                             dictum faucibus malesuada. Praesent sed eros tincidunt, viverra neque auctor, lobortis enim.
                         </p>
+                        <button class="getting-list__button">Show more</button>
                     </li>
                     <li class="getting-list__item">
                         <p class="getting-list__number">2</p>
                         <h3 class="getting-list__title">Choosing your hotel</h3>
-                        <p class="getting-list__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <p class="getting-list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus varius. Sed euismod orci
                             dictum faucibus malesuada. Praesent sed eros tincidunt, viverra neque auctor, lobortis enim.
                         </p>
-                        <picture>
+                        <button class="getting-list__button">Show more</button>
+                        <picture class="getting-list__picture">
                             <source srcset="./images/travelling-td-1x.jpg    1x,
                                 ./images/travelling-td-2x.jpg    2x" media="(min-width: 768px)">
                             <source srcset="./images/travelling-m-1x.jpg    1x,
@@ -387,13 +389,16 @@
                             <img src="./images/travelling-m-2x.jpg" alt="travelling">
                         </picture>
                         <h3 class="getting-list__title">Travelling there</h3>
-                        <p class="getting-list__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <p class="getting-list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Phasellus dapibus mauris in lectus tempus, eget tincidunt. </p>
+                        <button class="getting-list__button">Show more</button>
                     </li>
                     <li class="getting-list__item">
+                        <p class="getting-list__number">3</p>
                         <h3 class="getting-list__title">Planning your experiences</h3>
-                        <p class="getting-list__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus varius.
+                        <p class="getting-list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus varius.</p>
+                        <button class="getting-list__button">Show more</button>
                     </li>
                 </ul>
                 <button class="getting__button">Learn More</button>
@@ -407,7 +412,7 @@
                     <use href="./images/symboldefs.svg#rose"></use>
                 </svg>
                 <div class="logo__text">
-                    Explore
+                    <span class="logo__text--red">Explore</span>
                     Indonesia
                 </div>
             </div>
@@ -443,7 +448,7 @@
                 </ul>
             </address>
             <p class="footer__copyright">Copyright © 2019</p>
-            <a class="footer__top-link">
+            <a class="footer__top-link" href="#header">
                 <svg width="39px" height="22px">
                     <use href="./images/symboldefs.svg#top"></use>
                 </svg>
@@ -452,6 +457,7 @@
     </footer>
 
     <script src="./js/slider.js"></script>
+    <script src="./js/show-more.js"></script>
 </body>
 
 </html>

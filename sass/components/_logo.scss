@@ -18,6 +18,10 @@
         letter-spacing: 0.01em;
         text-transform: uppercase;
         color: var(--white);
+
+        &--red {
+            color: var(--main-color);
+        }
     }
 
     &__rectangle {
