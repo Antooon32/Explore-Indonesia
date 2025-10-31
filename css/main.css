@@ -109,6 +109,12 @@ body {
   gap: 5px;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .logo {
+    margin: 0 auto;
+    margin-bottom: 5px;
+  }
+}
 .logo__text {
   font-family: var(--second-family);
   font-weight: 900;
@@ -131,6 +137,65 @@ body {
   opacity: 0.7;
 }
 
+.burger-menu {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  padding: 48px 40px;
+  background-color: var(--white);
+}
+@media screen and (min-width: 768px) {
+  .burger-menu {
+    display: none;
+  }
+}
+.burger-menu__open {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .burger-menu__open {
+    display: none;
+  }
+}
+.burger-menu__close {
+  position: absolute;
+  left: 90%;
+  top: 10px;
+  background-color: var(--white);
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.burger-menu .bnav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+.burger-menu .bnav-list__nav-link {
+  text-transform: uppercase;
+  color: var(--light-text);
+}
+
+.displaynone {
+  transform: translateX(100vw);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
 .header {
   padding-top: 28px;
   margin-bottom: 45px;
@@ -139,6 +204,11 @@ body {
   display: flex;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .header .container {
+    display: block;
+  }
+}
 .header .container .header__nav {
   margin-left: 95px;
   display: flex;
@@ -146,9 +216,28 @@ body {
 .header .container .header__nav .hlist {
   display: none;
 }
+@media screen and (min-width: 768px) {
+  .header .container .header__nav .hlist {
+    display: flex;
+    gap: 49px;
+    margin-right: 49px;
+  }
+}
+.header .container .header__nav .hlist__link {
+  text-transform: uppercase;
+  color: var(--white);
+}
 .header .container .header__nav .hlist-mobile {
   display: flex;
   gap: 30px;
+}
+.header .container .header__nav .hlist-mobile__item {
+  display: flex;
+  align-items: center;
+}
+.header .container .header__nav .hlist-mobile__button {
+  display: flex;
+  align-items: center;
 }
 
 .hero__overlay {
@@ -185,6 +274,13 @@ body {
   color: var(--white);
   margin-bottom: 12px;
 }
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 120px;
+    text-align: center;
+    margin-bottom: 63px;
+  }
+}
 .hero__button {
   border-radius: 108px;
   padding: 10px;
@@ -201,6 +297,25 @@ body {
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 54px;
 }
+@media screen and (min-width: 768px) {
+  .hero__button {
+    margin: 0 auto;
+    margin-bottom: 49px;
+    border-radius: 211px;
+    padding: 10px;
+    width: 271px;
+    height: 82px;
+    background: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
 .hero .herolist {
   border: 1px solid rgba(0, 0, 0, 0.6);
   background: rgba(0, 0, 0, 0.6);
@@ -213,6 +328,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 32px;
+}
+@media screen and (min-width: 768px) {
+  .hero .herolist {
+    order: 1;
+    flex-direction: row;
+    width: 100%;
+    height: 193px;
+  }
 }
 .hero .herolist__item {
   display: flex;
@@ -253,6 +376,11 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero .video-container {
+    width: 417px;
+    height: 254px;
+    order: 0;
+    margin: 0 auto;
+    margin-bottom: 24px;
     background-image: url(../images/hero-video-td-1x.jpg);
   }
 }
@@ -263,8 +391,8 @@ body {
 }
 .hero .video-container__circle {
   position: absolute;
-  top: 34%;
-  left: 40%;
+  top: calc(50% - 29px);
+  left: calc(50% - 29px);
   width: 58px;
   height: 58px;
   display: flex;
@@ -287,11 +415,27 @@ body {
   line-height: 115%;
   color: var(--white);
 }
+@media screen and (min-width: 768px) {
+  .walkways__title {
+    text-align: center;
+    font-size: 42px;
+    width: 480px;
+    margin: 0 auto;
+  }
+}
 .walkways__description {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.03em;
   color: var(--text-lighten);
+}
+@media screen and (min-width: 768px) {
+  .walkways__description {
+    text-align: center;
+    font-size: 18px;
+    width: 407px;
+    margin: 0 auto;
+  }
 }
 .walkways__button {
   border-radius: 32px;
@@ -307,6 +451,24 @@ body {
   line-height: 150%;
   text-align: center;
   color: rgb(255, 255, 255);
+}
+@media screen and (min-width: 768px) {
+  .walkways__button {
+    border-radius: 32px;
+    padding: 10px;
+    width: 180px;
+    height: 59px;
+    background: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+  }
 }
 .walkways__overlay1 {
   padding-top: 40px;
@@ -371,6 +533,11 @@ body {
   margin: 0 auto;
   width: 314px;
 }
+@media screen and (min-width: 768px) {
+  .walkways__picture {
+    width: 630px;
+  }
+}
 
 .explore__overlay {
   background-image: url(../images/explore-background-m-1x.jpg);
@@ -397,6 +564,11 @@ body {
   padding-top: 25px;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .explore {
+    padding-top: 77px;
+  }
+}
 .explore__title {
   font-weight: 700;
   font-size: 40px;
@@ -404,6 +576,12 @@ body {
   text-align: center;
   color: var(--blue---background);
   margin-bottom: 23px;
+}
+@media screen and (min-width: 768px) {
+  .explore__title {
+    font-size: 50px;
+    margin-bottom: 72px;
+  }
 }
 .explore .slider {
   overflow-x: hidden;
@@ -441,13 +619,18 @@ body {
   position: absolute;
   width: 367px;
   top: 63%;
-  left: 3.5px;
-  right: 0;
+  left: calc(50% - 183px);
   transform: translateY(-50%);
   display: flex;
   justify-content: space-between;
   padding: 0;
   margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .explore .slider-buttons-list {
+    width: 467px;
+    left: calc(50% - 233px);
+  }
 }
 .explore .slider-pagination-list {
   display: flex;
@@ -494,6 +677,12 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .numbers__description {
+    width: 496px;
+    margin: 0 auto;
+  }
+}
 .numbers .nlist {
   display: flex;
   flex-direction: column;
@@ -516,6 +705,12 @@ body {
   line-height: 150%;
   letter-spacing: 0.03em;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .numbers .nlist__description {
+    width: 340px;
+    margin: 0 auto;
+  }
 }
 
 .hills {
@@ -846,7 +1041,7 @@ body {
   align-items: center;
   position: absolute;
   top: -40px;
-  left: 133px;
+  left: calc(50% - 52px);
   background-color: var(--main-color);
   border-radius: 100%;
 }/*# sourceMappingURL=main.css.map */

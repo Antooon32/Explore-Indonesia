@@ -41,7 +41,7 @@
         align-items: center;
         position: absolute;
         top: -40px;
-        left: 133px;
+        left: calc(50% - 52px);
         background-color: var(--main-color);
         border-radius: 100%;
     }

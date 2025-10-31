@@ -57,6 +57,28 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="burger-menu displaynone" data-burger>
+                    <button class="burger-menu__close" data-burger-close>
+                        <svg width="40px" height="40px">
+                            <use href="./images/symboldefs.svg#burger-close"></use>
+                        </svg>
+                    </button>
+
+                    <ul class="bnav-list">
+                        <li class="bnav-list__nav-item">
+                            <a class="bnav-list__nav-link" href="./index.html">destinations</a>
+                        </li>
+                        <li class="bnav-list__nav-item">
+                            <a class="bnav-list__nav-link" href="./index.html">experiences</a>
+                        </li>
+                        <li class="bnav-list__nav-item">
+                            <a class="bnav-list__nav-link" href="./index.html">about</a>
+                        </li>
+                        <li class="bnav-list__nav-item">
+                            <a class="bnav-list__nav-link" href="./index.html">gallery</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </header>
         <section class="hero">
@@ -253,7 +275,8 @@
         </section>
         <section class="life">
             <div class="container">
-                <h2 class="life__title">Live a life like you wouldn’t imagine, experience a life you wouldn’t expect.</h2>
+                <h2 class="life__title">Live a life like you wouldn’t imagine, experience a life you wouldn’t expect.
+                </h2>
                 <div class="video-container video-container2">
                     <video id="myVideo" preload="metadata">
                         <source src="#" type="video/mp4">
@@ -458,6 +481,7 @@
 
     <script src="./js/slider.js"></script>
     <script src="./js/show-more.js"></script>
+    <script src="./js/burger.js"></script>
 </body>
 
 </html>

@@ -8,6 +8,13 @@
         font-size: 40px;
         line-height: 115%;
         color: var(--white);
+
+        @media screen and (min-width: 768px) {
+            text-align: center;
+            font-size: 42px;
+            width: 480px;
+            margin: 0 auto;
+        }
     }
 
     &__description {
@@ -15,10 +22,22 @@
         line-height: 150%;
         letter-spacing: 0.03em;
         color: var(--text-lighten);
+
+        @media screen and (min-width: 768px) {
+            text-align: center;
+            font-size: 18px;
+            width: 407px;
+            margin: 0 auto;
+        }
     }
 
     &__button {
         @include button(100%, 72px, 32px);
+
+        @media screen and (min-width: 768px) {
+            @include button(180px, 59px, 32px);
+            margin: 0 auto;
+        }
     }
 
     &__overlay1 {
@@ -113,5 +132,9 @@
         margin: 0 auto;
         width: 314px;
         // height: 232px;
+
+        @media screen and (min-width: 768px) {
+            width: 630px;
+        }
     }
 }

@@ -47,11 +47,23 @@
         text-transform: uppercase;
         color: var(--white);
         margin-bottom: 12px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 120px;
+            text-align: center;
+            margin-bottom: 63px;
+        }
     }
 
     &__button {
         @include button(100%, 59px, 108px, 0.8);
         margin-bottom: 54px;
+
+        @media screen and (min-width: 768px) {
+            margin: 0 auto;
+            margin-bottom: 49px;
+            @include button(271px, 82px, 211px, 0.8);
+        }
     }
 
     .herolist {
@@ -67,6 +79,13 @@
         @include flex;
         flex-direction: column;
         gap: 32px;
+
+        @media screen and (min-width: 768px) {
+            order: 1;
+            flex-direction: row;
+            width: 100%;
+            height: 193px;
+        }
 
         &__item {
             @include flex;
@@ -97,6 +116,7 @@
     }
 
     .video-container {
+
         width: 314px;
         margin: 0 auto;
         margin-bottom: 40px;
@@ -116,6 +136,11 @@
         }
 
         @media screen and (min-width: 768px) {
+            width: 417px;
+            height: 254px;
+            order: 0;
+            margin: 0 auto;
+            margin-bottom: 24px;
             background-image:
 
                 url(../images/hero-video-td-1x.jpg);
@@ -133,8 +158,8 @@
 
         &__circle {
             position: absolute;
-            top: 34%;
-            left: 40%;
+            top: calc(50% - 29px);
+            left: calc(50% - 29px);
             width: 58px;
             height: 58px;
             @include flex;

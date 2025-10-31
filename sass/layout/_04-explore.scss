@@ -36,6 +36,10 @@
     padding-top: 25px;
     position: relative;
 
+    @media screen and (min-width: 768px) {
+        padding-top: 77px;
+    }
+
     &__title {
         // margin-top: 25px;
         font-weight: 700;
@@ -44,6 +48,11 @@
         text-align: center;
         color: var(--blue---background);
         margin-bottom: 23px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 50px;
+            margin-bottom: 72px;
+        }
     }
 
     .slider {
@@ -89,13 +98,17 @@
         position: absolute;
         width: 367px;
         top: 63%;
-        left: 3.5px;
-        right: 0;
+        left: calc(50% - 183px);
         transform: translateY(-50%);
         display: flex;
         justify-content: space-between;
         padding: 0;
         margin: 0;
+
+        @media screen and (min-width: 768px) {
+            width: 467px;
+            left: calc(50% - 233px);
+        }
     }
 
     .slider-pagination-list {
