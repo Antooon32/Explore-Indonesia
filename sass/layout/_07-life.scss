@@ -16,6 +16,7 @@
     }
 
     @media screen and (min-width: 768px) {
+        padding-top: 171px;
         background-image:
 
             url(../images/life-background-td-1x.png);
@@ -67,6 +68,9 @@
         }
 
         @media screen and (min-width: 768px) {
+            width: 738px;
+            height: 433px;
+            margin-bottom: 166px;
             background-image:
 
                 url(../images/life-video-td-1x.jpg);
@@ -84,8 +88,8 @@
 
         &__circle2 {
             position: absolute;
-            top: 34%;
-            left: 40%;
+            top: calc(50% - 29px);
+            left: calc(50% - 29px);
             width: 58px;
             height: 58px;
             @include flex;
@@ -106,6 +110,16 @@
     }
 
     .lifelist {
+        &__item {
+            @media screen and (min-width: 768px) {
+                @include flex;
+                gap: 40px;
+                justify-content: center;
+                margin-bottom: 79px;
+
+            }
+        }
+
         &__picture {
             display: block;
             width: 314px;
@@ -113,6 +127,21 @@
             overflow: hidden;
             margin: 0 auto;
             margin-bottom: 40px;
+
+            @media screen and (min-width: 768px) {
+                margin: 0;
+                width: 232px;
+                height: 151px;
+            }
+
+        }
+
+        &__content {
+            @media screen and (min-width: 768px) {
+                @include flex-column;
+                gap: 12px;
+                width: 333px;
+            }
         }
 
         &__title {

@@ -20,6 +20,8 @@
 
                 url(../images/hills-background-td-02.svg);
 
+            background-size: cover;
+            background-position: right;
         }
     }
 
@@ -35,6 +37,12 @@
         text-align: center;
         color: #000;
         margin-bottom: 36px;
+
+        @media screen and (min-width: 768px) {
+            width: 526px;
+            margin: 0 auto;
+            margin-bottom: 51px;
+        }
     }
 
     &__description {
@@ -43,11 +51,23 @@
         letter-spacing: 0.03em;
         text-align: center;
         color: var(--paragraph-dark);
-        margin-bottom: 41px
+        margin-bottom: 41px;
+
+        @media screen and (min-width: 768px) {
+            width: 526px;
+            margin: 0 auto;
+            margin-bottom: 171px;
+        }
     }
 
     &__button {
         @include button(100%, 73px, 122px);
+        margin: 0 auto;
         margin-bottom: 116px;
+
+
+        @media screen and (min-width: 768px) {
+            @include button(526px, 73px, 122px);
+        }
     }
 }

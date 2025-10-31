@@ -732,6 +732,8 @@ body {
 @media screen and (min-width: 768px) {
   .hills__overlay {
     background-image: url(../images/hills-background-td-02.svg);
+    background-size: cover;
+    background-position: right;
   }
 }
 .hills .container {
@@ -746,6 +748,13 @@ body {
   color: #000;
   margin-bottom: 36px;
 }
+@media screen and (min-width: 768px) {
+  .hills__title {
+    width: 526px;
+    margin: 0 auto;
+    margin-bottom: 51px;
+  }
+}
 .hills__description {
   font-size: 16px;
   line-height: 150%;
@@ -753,6 +762,13 @@ body {
   text-align: center;
   color: var(--paragraph-dark);
   margin-bottom: 41px;
+}
+@media screen and (min-width: 768px) {
+  .hills__description {
+    width: 526px;
+    margin: 0 auto;
+    margin-bottom: 171px;
+  }
 }
 .hills__button {
   border-radius: 122px;
@@ -768,7 +784,25 @@ body {
   line-height: 150%;
   text-align: center;
   color: rgb(255, 255, 255);
+  margin: 0 auto;
   margin-bottom: 116px;
+}
+@media screen and (min-width: 768px) {
+  .hills__button {
+    border-radius: 122px;
+    padding: 10px;
+    width: 526px;
+    height: 73px;
+    background: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
 }
 
 .life {
@@ -785,6 +819,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .life {
+    padding-top: 171px;
     background-image: url(../images/life-background-td-1x.png);
   }
 }
@@ -823,6 +858,9 @@ body {
 }
 @media screen and (min-width: 768px) {
   .life .video-container2 {
+    width: 738px;
+    height: 433px;
+    margin-bottom: 166px;
     background-image: url(../images/life-video-td-1x.jpg);
   }
 }
@@ -833,8 +871,8 @@ body {
 }
 .life .video-container2__circle2 {
   position: absolute;
-  top: 34%;
-  left: 40%;
+  top: calc(50% - 29px);
+  left: calc(50% - 29px);
   width: 58px;
   height: 58px;
   display: flex;
@@ -846,6 +884,14 @@ body {
 .life .video-container2__svg2 {
   fill: var(--white);
 }
+@media screen and (min-width: 768px) {
+  .life .lifelist__item {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 79px;
+  }
+}
 .life .lifelist__picture {
   display: block;
   width: 314px;
@@ -853,6 +899,21 @@ body {
   overflow: hidden;
   margin: 0 auto;
   margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .life .lifelist__picture {
+    margin: 0;
+    width: 232px;
+    height: 151px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .life .lifelist__content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 333px;
+  }
 }
 .life .lifelist__title {
   font-weight: 700;
@@ -874,6 +935,11 @@ body {
 .gallery {
   padding-top: 32px;
 }
+@media screen and (min-width: 768px) {
+  .gallery {
+    padding-top: 177px;
+  }
+}
 .gallery__title {
   font-weight: 700;
   font-size: 40px;
@@ -881,6 +947,11 @@ body {
   text-align: center;
   color: var(--blue---background);
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .gallery__title {
+    margin-bottom: 41px;
+  }
 }
 .gallery__description {
   font-size: 16px;
@@ -890,6 +961,13 @@ body {
   color: var(--paragraph-dark);
   margin-bottom: 32px;
 }
+@media screen and (min-width: 768px) {
+  .gallery__description {
+    width: 511px;
+    margin: 0 auto;
+    margin-bottom: 87px;
+  }
+}
 .gallery .gallery-list {
   width: 314px;
   margin: 0 auto;
@@ -897,6 +975,14 @@ body {
   display: grid;
   gap: 13px;
   grid-template-areas: "a c" "a d" "a d" "b d" "e f" "e f";
+}
+@media screen and (min-width: 768px) {
+  .gallery .gallery-list {
+    width: 738px;
+    margin-bottom: 171px;
+    gap: 19px;
+    grid-template-areas: "a c e" "a c e" "a d e" "a d f" "b d f" "b d f";
+  }
 }
 .gallery .gallery-list .a {
   grid-area: a;

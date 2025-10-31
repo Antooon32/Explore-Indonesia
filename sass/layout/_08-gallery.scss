@@ -1,6 +1,10 @@
 .gallery {
     padding-top: 32px;
 
+    @media screen and (min-width: 768px) {
+        padding-top: 177px;
+    }
+
     &__title {
         font-weight: 700;
         font-size: 40px;
@@ -8,6 +12,10 @@
         text-align: center;
         color: var(--blue---background);
         margin-bottom: 20px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 41px;
+        }
     }
 
     &__description {
@@ -17,6 +25,12 @@
         text-align: center;
         color: var(--paragraph-dark);
         margin-bottom: 32px;
+
+        @media screen and (min-width: 768px) {
+            width: 511px;
+            margin: 0 auto;
+            margin-bottom: 87px;
+        }
     }
 
     .gallery-list {
@@ -35,6 +49,20 @@
             "e f"
             "e f"
             ;
+
+        @media screen and (min-width: 768px) {
+            width: 738px;
+            margin-bottom: 171px;
+            gap: 19px;
+            grid-template-areas: 
+            "a c e"
+            "a c e"
+            "a d e"
+            "a d f"
+            "b d f"
+            "b d f"
+            ;
+        }
 
         .a {
             grid-area: a;
