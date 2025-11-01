@@ -18,6 +18,12 @@
         gap: 36px;
         margin-bottom: 36px;
 
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            gap: 114px;
+            margin-bottom: 56px;
+        }
+
         &__link {
             font-weight: 700;
             font-size: 22px;
@@ -31,6 +37,10 @@
         @include flex;
         gap: 48px;
         // margin-bottom: 36px;
+
+        @media screen and (min-width: 768px) {
+            justify-content: center;
+        }
     }
 
     &__top-link {
@@ -44,5 +54,12 @@
         left: calc(50% - 52px);
         background-color: var(--main-color);
         border-radius: 100%;
+    }
+
+    &__copyright {
+        font-weight: 700;
+        font-size: 23px;
+        letter-spacing: 0.03em;
+        color: var(--white);
     }
 }
