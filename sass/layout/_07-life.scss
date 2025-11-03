@@ -30,6 +30,9 @@
                 url(../images/life-background-td-2x.png);
         }
 
+        @media screen and (min-width: 1400px) {
+            padding-bottom: 171px;
+        }
     }
 
     .container {
@@ -44,6 +47,12 @@
         text-align: center;
         color: var(--white);
         margin-bottom: 110px;
+
+        @media screen and (min-width: 1400px) {
+            width: 1056px;
+            margin: 0 auto;
+            margin-bottom: 110px;
+        }
     }
 
     .video-container2 {
@@ -86,6 +95,11 @@
 
         }
 
+        @media screen and (min-width: 1400px) {
+            width: 1056px;
+            height: 594px;
+        }
+
         &__circle2 {
             position: absolute;
             top: calc(50% - 29px);
@@ -110,6 +124,13 @@
     }
 
     .lifelist {
+
+        @media screen and (min-width: 1400px) {
+            @include flex;
+            gap: 75px;
+            justify-content: center;
+        }
+
         &__item {
             @media screen and (min-width: 768px) {
                 @include flex;
@@ -151,6 +172,10 @@
             text-align: center;
             color: var(--white);
             margin-bottom: 20px;
+
+            @media screen and (min-width: 1400px) {
+                text-align: start;
+            }
         }
 
         &__description {
@@ -160,6 +185,10 @@
             text-align: center;
             color: var(--white);
             margin-bottom: 37px;
+
+            @media screen and (min-width: 1400px) {
+                text-align: start;
+            }
         }
     }
 }

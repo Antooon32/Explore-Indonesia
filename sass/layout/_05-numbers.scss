@@ -3,6 +3,11 @@
     opacity: 0.9;
     padding: 70px 0;
 
+    @media screen and (min-width: 1400px) {
+        padding-top: 201px;
+        padding-bottom: 224px;
+    }
+
     .container {
         @include flex;
         flex-direction: column;
@@ -33,6 +38,11 @@
         @include flex;
         flex-direction: column;
         gap: 80px;
+
+        @media screen and (min-width: 1400px) {
+            justify-content: center;
+            flex-direction: row;
+        }
 
         &__item {
             @include flex;

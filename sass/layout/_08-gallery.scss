@@ -64,6 +64,10 @@
             ;
         }
 
+        @media screen and (min-width: 1400px) {
+            width: 1176px;
+        }
+
         .a {
             grid-area: a;
         }

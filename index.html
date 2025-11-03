@@ -85,37 +85,38 @@
             <div class="container">
                 <h1 class="hero__title">explore indonesia</h1>
                 <button class="hero__button">Start travelling</button>
+                <div class="hero__content">
+                    <ul class="herolist">
+                        <li class="herolist__item">
+                            <p class="herolist__item__number">01</p>
+                            <h3 class="herolist__item__title">Title here</h3>
+                            <p class="herolist__item__description">Lorem ipsum dolor sit amet et amet ist ame.</p>
+                        </li>
+                        <li class="herolist__item">
+                            <p class="herolist__item__number">02</p>
+                            <h3 class="herolist__item__title">Title here</h3>
+                            <p class="herolist__item__description">Lorem ipsum dolor sit amet et amet ist ame.</p>
+                        </li>
+                        <li class="herolist__item">
+                            <p class="herolist__item__number">03</p>
+                            <h3 class="herolist__item__title">Title here</h3>
+                            <p class="herolist__item__description">Lorem ipsum dolor sit amet et amet ist ame.</p>
+                        </li>
+                    </ul>
 
-                <ul class="herolist">
-                    <li class="herolist__item">
-                        <p class="herolist__item__number">01</p>
-                        <h3 class="herolist__item__title">Title here</h3>
-                        <p class="herolist__item__description">Lorem ipsum dolor sit amet et amet ist ame.</p>
-                    </li>
-                    <li class="herolist__item">
-                        <p class="herolist__item__number">02</p>
-                        <h3 class="herolist__item__title">Title here</h3>
-                        <p class="herolist__item__description">Lorem ipsum dolor sit amet et amet ist ame.</p>
-                    </li>
-                    <li class="herolist__item">
-                        <p class="herolist__item__number">03</p>
-                        <h3 class="herolist__item__title">Title here</h3>
-                        <p class="herolist__item__description">Lorem ipsum dolor sit amet et amet ist ame.</p>
-                    </li>
-                </ul>
+                    <div class="video-container">
+                        <video id="myVideo" preload="metadata">
+                            <source src="#" type="video/mp4">
+                        </video>
 
-                <div class="video-container">
-                    <video id="myVideo" preload="metadata">
-                        <source src="#" type="video/mp4">
-                    </video>
-
-                    <button id="playButton" class="video-container__play-button">
-                        <div class="video-container__circle">
-                            <svg class="video-container__svg" width="16px" height="20px">
-                                <use href="./images/symboldefs.svg#play"></use>
-                            </svg>
-                        </div>
-                    </button>
+                        <button id="playButton" class="video-container__play-button">
+                            <div class="video-container__circle">
+                                <svg class="video-container__svg" width="16px" height="20px">
+                                    <use href="./images/symboldefs.svg#play"></use>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
                 </div>
 
                 <div class="hero__vertical">
@@ -149,19 +150,22 @@
                                 ./images/walkways-m-2x.jpg    2x" media="(min-width: 375px)">
                         <img src="./images/walkways-m-2x.jpg" alt="walkways">
                     </picture>
-
-                    <h3 class="walkways__title">The walkways of Indonesia spellbind</h3>
-                    <p class="walkways__description">Lorem ipsum dolor sit amet, consectetur adip iscing elit.
-                        Fusce commodo magna et libero mollis rhoncus. </p>
-                    <button class="walkways__button">Learn More</button>
+                    <div class="walkways__content">
+                        <h3 class="walkways__title">The walkways of Indonesia spellbind</h3>
+                        <p class="walkways__description">Lorem ipsum dolor sit amet, consectetur adip iscing elit.
+                            Fusce commodo magna et libero mollis rhoncus. </p>
+                        <button class="walkways__button">Learn More</button>
+                    </div>
                 </div>
             </div>
             <div class="walkways__overlay2">
                 <div class="container">
-                    <h3 class="walkways__title">Perfect beaches exude relaxation and fun</h3>
-                    <p class="walkways__description">Lorem ipsum dolor sit amet, consectetur adip iscing elit.
-                        Fusce commodo magna et libero mollis rhoncus. </p>
-                    <button class="walkways__button">Learn More</button>
+                    <div class="walkways__content">
+                        <h3 class="walkways__title">Perfect beaches exude relaxation and fun</h3>
+                        <p class="walkways__description">Lorem ipsum dolor sit amet, consectetur adip iscing elit.
+                            Fusce commodo magna et libero mollis rhoncus. </p>
+                        <button class="walkways__button">Learn More</button>
+                    </div>
 
                     <picture class="walkways__picture">
                         <source srcset="./images/beaches-td-1x.jpg    1x,
@@ -196,6 +200,62 @@
                     <div class="slider">
 
                         <ul class="slider-list">
+                            <li class="slider-list__item">
+                                <picture class="slider-list__item__content">
+                                    <source srcset="./images/explore-01-td-1x.jpg    1x,
+                                ./images/explore-01-td-2x.jpg    2x">
+                                    <img src="./images/explore-01-td-2x.jpg" alt="explore-01">
+                                </picture>
+                            </li>
+                            <li class="slider-list__item">
+                                <picture class="slider-list__item__content">
+                                    <source srcset="./images/explore-02-td-1x.jpg    1x,
+                                ./images/explore-02-td-2x.jpg    2x">
+                                    <img src="./images/explore-02-td-2x.jpg" alt="explore-02">
+                                </picture>
+                            </li>
+                            <li class="slider-list__item">
+                                <picture class="slider-list__item__content">
+                                    <source srcset="./images/explore-03-td-1x.jpg    1x,
+                                ./images/explore-03-td-2x.jpg    2x">
+                                    <img src="./images/explore-03-td-2x.jpg" alt="explore-03">
+                                </picture>
+                            </li>
+                            <li class="slider-list__item">
+                                <picture class="slider-list__item__content">
+                                    <source srcset="./images/explore-04-m-1x.jpg    1x,
+                                ./images/explore-04-m-2x.jpg    2x">
+                                    <img src="./images/explore-04-m-2x.jpg" alt="explore-04">
+                                </picture>
+                            </li>
+                            <li class="slider-list__item">
+                                <picture class="slider-list__item__content">
+                                    <source srcset="./images/explore-01-td-1x.jpg    1x,
+                                ./images/explore-01-td-2x.jpg    2x">
+                                    <img src="./images/explore-01-td-2x.jpg" alt="explore-01">
+                                </picture>
+                            </li>
+                            <li class="slider-list__item">
+                                <picture class="slider-list__item__content">
+                                    <source srcset="./images/explore-02-td-1x.jpg    1x,
+                                ./images/explore-02-td-2x.jpg    2x">
+                                    <img src="./images/explore-02-td-2x.jpg" alt="explore-02">
+                                </picture>
+                            </li>
+                            <li class="slider-list__item">
+                                <picture class="slider-list__item__content">
+                                    <source srcset="./images/explore-03-td-1x.jpg    1x,
+                                ./images/explore-03-td-2x.jpg    2x">
+                                    <img src="./images/explore-03-td-2x.jpg" alt="explore-03">
+                                </picture>
+                            </li>
+                            <li class="slider-list__item">
+                                <picture class="slider-list__item__content">
+                                    <source srcset="./images/explore-04-m-1x.jpg    1x,
+                                ./images/explore-04-m-2x.jpg    2x">
+                                    <img src="./images/explore-04-m-2x.jpg" alt="explore-04">
+                                </picture>
+                            </li>
                             <li class="slider-list__item">
                                 <picture class="slider-list__item__content">
                                     <source srcset="./images/explore-01-td-1x.jpg    1x,
@@ -393,6 +453,7 @@
                 <ul class="getting-list">
                     <li class="getting-list__item">
                         <p class="getting-list__number">1</p>
+                        <div class="getting-list__rectangle"></div>
                         <h3 class="getting-list__title">Bookings your flights</h3>
                         <p class="getting-list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus varius. Sed euismod orci
@@ -402,8 +463,10 @@
                     </li>
                     <li class="getting-list__item">
                         <p class="getting-list__number">2</p>
+                        <div class="getting-list__rectangle"></div>
                         <h3 class="getting-list__title">Choosing your hotel</h3>
-                        <p class="getting-list__description getting-list__description--margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <p class="getting-list__description getting-list__description--margin">Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit.
                             Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus varius. Sed euismod orci
                             dictum faucibus malesuada. Praesent sed eros tincidunt, viverra neque auctor, lobortis enim.
                         </p>
@@ -418,7 +481,7 @@
                             </picture>
                             <div class="getting-list__text-content2">
                                 <h3 class="getting-list__title2">Travelling there</h3>
-                                <p class="getting-list__description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                <p class="getting-list__description getting-list__description--nomargin">Lorem ipsum dolor sit amet, consectetur adipiscing
                                     elit.
                                     Phasellus dapibus mauris in lectus tempus, eget tincidunt. </p>
                                 <button class="getting-list__button">Show more</button>

@@ -10,6 +10,11 @@
             url(../images/hills-background-td-01.svg);
     }
 
+    @media screen and (min-width: 1400px) {
+        padding-top: 249px;
+        // padding-bottom: 256px;
+    }
+
     &__overlay {
         background-image: url(../images/hills-background-m-02.svg);
         background-repeat: no-repeat;
@@ -58,6 +63,10 @@
             margin: 0 auto;
             margin-bottom: 171px;
         }
+
+        @media screen and (min-width: 1400px) {
+            margin-bottom: 36px;
+        }
     }
 
     &__button {
@@ -68,6 +77,11 @@
 
         @media screen and (min-width: 768px) {
             @include button(526px, 73px, 122px);
+        }
+
+        @media screen and (min-width: 1400px) {
+            @include button(210px, 64px, 122px);
+            margin-bottom: 256px;
         }
     }
 }

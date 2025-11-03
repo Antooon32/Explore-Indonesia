@@ -3,12 +3,22 @@
     margin-bottom: 45px;
     // display: flex;
 
+    @media screen and (min-width: 1400px) {
+        margin-bottom: 159px;
+    }
+
     .container {
         @include flex;
         align-items: center;
 
         @media screen and (min-width: 768px) {
             display: block;
+        }
+
+        @media screen and (min-width: 1400px) {
+            @include flex;
+            align-items: center;
+            padding-left: 46px;
         }
 
         .header__nav {
@@ -22,6 +32,10 @@
                     display: flex;
                     gap: 49px;
                     margin-right: 49px;
+                }
+
+                @media screen and (min-width: 1400px) {
+                    margin-right: 500px;
                 }
 
                 &__link {
