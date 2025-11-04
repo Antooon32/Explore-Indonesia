@@ -36,8 +36,7 @@
     }
 
     .container {
-        @include flex;
-        flex-direction: column;
+        @include flex-column;
     }
 
     &__title {
@@ -111,11 +110,18 @@
             align-items: center;
             border-radius: 100%;
             background-color: #e93a7d;
+            cursor: pointer;
 
             // fill: var(--white);
             // stroke-width: 1px;
             // stroke: var(--white);
             // box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.5);
+
+            @include multi-transition(transform);
+
+            &:hover {
+                transform: scale(1.2);
+            }
         }
 
         &__svg2 {

@@ -45,6 +45,11 @@
                 &__link {
                     text-transform: uppercase;
                     color: var(--white);
+                    @include multi-transition(color);
+
+                    &:hover {
+                        color: var(--main-color);
+                    }
                 }
             }
 
@@ -55,6 +60,13 @@
                 &__item {
                     @include flex;
                     align-items: center;
+                    fill: var(--white);
+                    cursor: pointer;
+                    @include multi-transition(fill);
+
+                    &:hover {
+                        fill: var(--main-color);
+                    }
                 }
 
                 &__button {

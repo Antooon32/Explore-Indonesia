@@ -2,22 +2,6 @@
     display: flex;
 }
 
-@mixin button($w, $h, $r, $c: 1) {
-    border-radius: $r;
-    padding: 10px;
-    width: $w;
-    height: $h;
-    background: var(--main-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 150%;
-    text-align: center;
-    color: rgba(255, 255, 255, $c);
-}
-
 @mixin background($url) {
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -42,7 +26,7 @@
     }
 }
 
-@mixin multi-transition($properties, $duration: 250ms, $timing-function: cubic-bezier(0.4, 0, 0.2, 1), $delay: 0s) {
+@mixin multi-transition($properties, $duration: 500ms, $timing-function: cubic-bezier(0.4, 0, 0.2, 1), $delay: 0s) {
     $transitions: (
     );
 
@@ -57,6 +41,34 @@
 }
 
 transition: $transitions;
+}
+
+@mixin button($w, $h, $r, $c: 1) {
+    border-radius: $r;
+    padding: 10px;
+    width: $w;
+    height: $h;
+    background: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: rgba(255, 255, 255, $c);
+    cursor: pointer;
+    @include multi-transition((transform, color, background-color));
+
+    &:hover {
+        color: var(--main-color);
+        background-color: rgba(255, 255, 255, $c);
+        border: 2px solid black;
+
+        @media screen and (min-width: 768px) {
+            transform: scale(1.12);
+        }
+    }
 }
 
 @mixin flex-column {

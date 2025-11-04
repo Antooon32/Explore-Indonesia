@@ -133,6 +133,15 @@
             left: calc(50% - 695px);
             top: calc(74% - 20px);
         }
+
+        &__button {
+            @include multi-transition(fill);
+            cursor: pointer;
+
+            &:hover {
+                fill: var(--main-color);
+            }
+        }
     }
 
     .slider-pagination-list {

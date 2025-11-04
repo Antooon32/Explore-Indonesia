@@ -6,6 +6,25 @@
     width: 165px;
     gap: 5px;
     position: relative;
+    fill: white;
+    font-family: var(--second-family);
+    font-weight: 900;
+    font-size: 23px;
+    line-height: 81%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: var(--white);
+
+    &--red {
+        color: var(--main-color);
+    }
+
+    @include multi-transition((color, fill));
+
+    &:hover {
+        fill: var(--main-color);
+        color: var(--main-color);
+    }
 
     @media screen and (min-width: 768px) {
         margin: 0 auto;
@@ -17,22 +36,6 @@
     }
 
     // background-color: black;
-    
-
-    &__text {
-        font-family: var(--second-family);
-        font-weight: 900;
-        font-size: 23px;
-        line-height: 81%;
-        letter-spacing: 0.01em;
-        text-transform: uppercase;
-        color: var(--white);
-
-        &--red {
-            color: var(--main-color);
-        }
-    }
-
     &__rectangle {
         position: absolute;
         top: 30px;

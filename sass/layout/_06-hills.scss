@@ -31,8 +31,7 @@
     }
 
     .container {
-        @include flex;
-        flex-direction: column;
+        @include flex-column;
     }
 
     &__title {

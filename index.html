@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Indonesia</title>
+    <!--! My icon -->
+    <link href="https://img.icons8.com/emoji/16/indonesia-emoji.png" type="image/x-icon" rel="shortcut icon">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
         integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
@@ -23,7 +25,7 @@
     <div class="hero__overlay">
         <header class="header" id="header">
             <div class="container">
-                <div class="logo">
+                <a href="#" class="logo">
                     <svg class="logo__svg" width="25px" height="49px">
                         <use href="./images/symboldefs.svg#rose"></use>
                     </svg>
@@ -32,7 +34,7 @@
                         Indonesia
                     </div>
                     <div class="logo__rectangle"></div>
-                </div>
+                </a>
                 <nav class="header__nav">
                     <ul class="hlist">
                         <li class="hlist__item"><a class="hlist__link" href="#">destinations</a></li>
@@ -181,18 +183,22 @@
             <section class="explore">
 
                 <ul class="slider-buttons-list">
-                    <button class="slider-buttons-list__button slider-buttons-list__button--prev" type="button"
-                        data-slider-prevBtn>
-                        <svg width="15px" height="24px">
-                            <use href="./images/symboldefs.svg#left"></use>
-                        </svg>
-                    </button>
-                    <button class="slider-buttons-list__button slider-buttons-list__button--next" type="button"
-                        data-slider-nextBtn>
-                        <svg width="15px" height="24px">
-                            <use href="./images/symboldefs.svg#right"></use>
-                        </svg>
-                    </button>
+                    <li class="slider-buttons-list__item">
+                        <button class="slider-buttons-list__button slider-buttons-list__button--prev" type="button"
+                            data-slider-prevBtn>
+                            <svg width="15px" height="24px">
+                                <use href="./images/symboldefs.svg#left"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="slider-buttons-list__item">
+                        <button class="slider-buttons-list__button slider-buttons-list__button--next" type="button"
+                            data-slider-nextBtn>
+                            <svg width="15px" height="24px">
+                                <use href="./images/symboldefs.svg#right"></use>
+                            </svg>
+                        </button>
+                    </li>
                 </ul>
 
                 <div class="container">
@@ -481,7 +487,8 @@
                             </picture>
                             <div class="getting-list__text-content2">
                                 <h3 class="getting-list__title2">Travelling there</h3>
-                                <p class="getting-list__description getting-list__description--nomargin">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                <p class="getting-list__description getting-list__description--nomargin">Lorem ipsum
+                                    dolor sit amet, consectetur adipiscing
                                     elit.
                                     Phasellus dapibus mauris in lectus tempus, eget tincidunt. </p>
                                 <button class="getting-list__button">Show more</button>
@@ -502,15 +509,13 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <div class="logo">
+            <a href="#" class="logo">
                 <svg class="logo__svg" width="25px" height="49px">
                     <use href="./images/symboldefs.svg#rose"></use>
                 </svg>
-                <div class="logo__text">
-                    <span class="logo__text--red">Explore</span>
-                    Indonesia
-                </div>
-            </div>
+                <span class="logo__text--red">Explore</span>
+                Indonesia
+            </a>
             <address class="address">
                 <ul class="address-list">
                     <li class="address-list__item"><a href="#" class="address-list__link">About</a></li>

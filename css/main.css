@@ -113,6 +113,22 @@ body {
   width: 165px;
   gap: 5px;
   position: relative;
+  fill: white;
+  font-family: var(--second-family);
+  font-weight: 900;
+  font-size: 23px;
+  line-height: 81%;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--white);
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s, fill 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+.logo--red {
+  color: var(--main-color);
+}
+.logo:hover {
+  fill: var(--main-color);
+  color: var(--main-color);
 }
 @media screen and (min-width: 768px) {
   .logo {
@@ -125,18 +141,6 @@ body {
     margin: 0;
   }
 }
-.logo__text {
-  font-family: var(--second-family);
-  font-weight: 900;
-  font-size: 23px;
-  line-height: 81%;
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
-  color: var(--white);
-}
-.logo__text--red {
-  color: var(--main-color);
-}
 .logo__rectangle {
   position: absolute;
   top: 30px;
@@ -148,7 +152,7 @@ body {
 }
 
 .burger-menu {
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
   position: fixed;
   left: 0;
   top: 0;
@@ -258,6 +262,10 @@ body {
 .header .container .header__nav .hlist__link {
   text-transform: uppercase;
   color: var(--white);
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+.header .container .header__nav .hlist__link:hover {
+  color: var(--main-color);
 }
 .header .container .header__nav .hlist-mobile {
   display: flex;
@@ -266,6 +274,12 @@ body {
 .header .container .header__nav .hlist-mobile__item {
   display: flex;
   align-items: center;
+  fill: var(--white);
+  cursor: pointer;
+  transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+.header .container .header__nav .hlist-mobile__item:hover {
+  fill: var(--main-color);
 }
 .header .container .header__nav .hlist-mobile__button {
   display: flex;
@@ -348,7 +362,19 @@ body {
   line-height: 150%;
   text-align: center;
   color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s, color 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s, background-color 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
   margin-bottom: 54px;
+}
+.hero__button:hover {
+  color: var(--main-color);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid black;
+}
+@media screen and (min-width: 768px) {
+  .hero__button:hover {
+    transform: scale(1.12);
+  }
 }
 @media screen and (min-width: 768px) {
   .hero__button {
@@ -367,6 +393,18 @@ body {
     line-height: 150%;
     text-align: center;
     color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s, color 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s, background-color 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  }
+  .hero__button:hover {
+    color: var(--main-color);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid black;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  .hero__button:hover {
+    transform: scale(1.12);
   }
 }
 @media screen and (min-width: 1400px) {
@@ -498,6 +536,11 @@ body {
   align-items: center;
   border-radius: 100%;
   background-color: var(--white);
+  cursor: pointer;
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+.hero .video-container__circle:hover {
+  transform: scale(1.2);
 }
 .hero__vertical {
   display: none;
@@ -546,6 +589,10 @@ body {
   text-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
   writing-mode: vertical-rl;
   transform: rotate(180deg);
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+.hero__vertical .sociallist__link:hover {
+  color: var(--main-color);
 }
 
 .walkways {
@@ -589,7 +636,6 @@ body {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.03em;
-  color: var(--text-lighten);
 }
 @media screen and (min-width: 768px) {
   .walkways__description {
@@ -613,6 +659,18 @@ body {
   line-height: 150%;
   text-align: center;
   color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s, color 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s, background-color 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+.walkways__button:hover {
+  color: var(--main-color);
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+}
+@media screen and (min-width: 768px) {
+  .walkways__button:hover {
+    transform: scale(1.12);
+  }
 }
 @media screen and (min-width: 768px) {
   .walkways__button {
@@ -629,7 +687,19 @@ body {
     line-height: 150%;
     text-align: center;
     color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s, color 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s, background-color 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
     margin: 0 auto;
+  }
+  .walkways__button:hover {
+    color: var(--main-color);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  .walkways__button:hover {
+    transform: scale(1.12);
   }
 }
 .walkways__overlay1 {
@@ -837,6 +907,13 @@ body {
     top: calc(74% - 20px);
   }
 }
+.explore .slider-buttons-list__button {
+  transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  cursor: pointer;
+}
+.explore .slider-buttons-list__button:hover {
+  fill: var(--main-color);
+}
 .explore .slider-pagination-list {
   display: flex;
   justify-content: center;
@@ -1041,8 +1118,20 @@ body {
   line-height: 150%;
   text-align: center;
   color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s, color 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s, background-color 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
   margin: 0 auto;
   margin-bottom: 116px;
+}
+.hills__button:hover {
+  color: var(--main-color);
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+}
+@media screen and (min-width: 768px) {
+  .hills__button:hover {
+    transform: scale(1.12);
+  }
 }
 @media screen and (min-width: 768px) {
   .hills__button {
@@ -1059,6 +1148,18 @@ body {
     line-height: 150%;
     text-align: center;
     color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s, color 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s, background-color 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  }
+  .hills__button:hover {
+    color: var(--main-color);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  .hills__button:hover {
+    transform: scale(1.12);
   }
 }
 @media screen and (min-width: 1400px) {
@@ -1076,7 +1177,19 @@ body {
     line-height: 150%;
     text-align: center;
     color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s, color 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s, background-color 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
     margin-bottom: 256px;
+  }
+  .hills__button:hover {
+    color: var(--main-color);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+  }
+}
+@media screen and (min-width: 1400px) and (min-width: 768px) {
+  .hills__button:hover {
+    transform: scale(1.12);
   }
 }
 
@@ -1173,6 +1286,11 @@ body {
   align-items: center;
   border-radius: 100%;
   background-color: #e93a7d;
+  cursor: pointer;
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+.life .video-container2__circle2:hover {
+  transform: scale(1.2);
 }
 .life .video-container2__svg2 {
   fill: var(--white);
@@ -1394,6 +1512,18 @@ body {
     line-height: 150%;
     text-align: center;
     color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s, color 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s, background-color 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  }
+  .getting__button:hover {
+    color: var(--main-color);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  .getting__button:hover {
+    transform: scale(1.12);
   }
 }
 @media screen and (min-width: 1400px) {
@@ -1522,7 +1652,6 @@ body {
   }
 }
 .getting .getting-list__description {
-  font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.03em;
@@ -1560,7 +1689,6 @@ body {
   max-height: 170px;
 }
 .getting .getting-list__button {
-  font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.03em;
@@ -1668,9 +1796,12 @@ body {
 .footer .address-list__link {
   font-weight: 700;
   font-size: 22px;
-  line-height: 156%;
   letter-spacing: 0.03em;
   color: var(--white);
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+.footer .address-list__link:hover {
+  color: var(--main-color);
 }
 .footer .address-social-list {
   display: flex;
@@ -1689,6 +1820,11 @@ body {
 .footer .address-social-list__item {
   display: flex;
   align-items: center;
+  fill: var(--white);
+  transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+.footer .address-social-list__item:hover {
+  fill: var(--main-color);
 }
 .footer__top-link {
   width: 104px;
@@ -1701,6 +1837,13 @@ body {
   left: calc(50% - 52px);
   background-color: var(--main-color);
   border-radius: 100%;
+  fill: var(--white);
+  transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s, background-color 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+.footer__top-link:hover {
+  fill: var(--main-color);
+  background-color: var(--white);
+  border: 2px solid black;
 }
 @media screen and (min-width: 1400px) {
   .footer__top-link {

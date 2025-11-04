@@ -9,8 +9,7 @@
     }
 
     .container {
-        @include flex;
-        flex-direction: column;
+        @include flex-column;
         gap: 57px;
     }
 
@@ -43,8 +42,7 @@
     }
 
     .nlist {
-        @include flex;
-        flex-direction: column;
+        @include flex-column;
         gap: 80px;
 
         @media screen and (min-width: 1400px) {
@@ -53,8 +51,7 @@
         }
 
         &__item {
-            @include flex;
-            flex-direction: column;
+            @include flex-column;
             gap: 5px;
 
         }
