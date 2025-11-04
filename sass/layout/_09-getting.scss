@@ -30,6 +30,12 @@
             margin-left: 75px;
             margin-bottom: 44px;
         }
+
+        @media screen and (min-width: 1920px) {
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 44px;
+        }
     }
 
     &__button {
@@ -42,6 +48,10 @@
 
         @media screen and (min-width: 1400px) {
             margin-left: 170px;
+        }
+
+        @media screen and (min-width: 1920px) {
+            margin-left: 449px;
         }
     }
 
@@ -58,6 +68,11 @@
         @media screen and (min-width: 1400px) {
             width: 1162px;
             margin-left: 75px;
+            margin-bottom: 17px;
+        }
+
+        @media screen and (min-width: 1920px) {
+            margin: 0 auto;
             margin-bottom: 17px;
         }
 

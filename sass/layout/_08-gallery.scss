@@ -16,6 +16,10 @@
         @media screen and (min-width: 768px) {
             margin-bottom: 41px;
         }
+
+        @media screen and (min-width: 1920px) {
+            font-size: 60px;
+        }
     }
 
     &__description {
@@ -30,6 +34,10 @@
             width: 511px;
             margin: 0 auto;
             margin-bottom: 87px;
+        }
+
+        @media screen and (min-width: 1920px) {
+            font-size: 18px;
         }
     }
 
