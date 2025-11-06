@@ -19,13 +19,72 @@ class SimpleSlider {
 
     this.currentIndex = 0;
 
+    this.lightboxModal = null;
+    this.lightboxImage = null;
+    this.boundHandleKeydown = this.handleKeydown.bind(this); 
+
     this.init();
   }
 
   init() {
     this.renderPagination();
     this.attachEvents();
+    this.createLightboxModal(); 
     this.updateSlider(this.currentIndex, false);
+  }
+
+  createLightboxModal() {
+    this.lightboxModal = document.createElement('div');
+    this.lightboxModal.classList.add('lightbox-modal');
+    this.lightboxModal.addEventListener('click', this.closeLightbox.bind(this)); 
+
+    this.lightboxImage = document.createElement('img');
+    this.lightboxImage.classList.add('lightbox-modal__content');
+    
+    this.lightboxImage.addEventListener('click', (e) => e.stopPropagation()); 
+
+    this.lightboxModal.appendChild(this.lightboxImage);
+    document.body.appendChild(this.lightboxModal);
+  }
+
+  openLightbox(imageSrc) {
+    this.lightboxImage.src = imageSrc; 
+    this.lightboxModal.classList.add('lightbox-modal--visible');
+    document.body.style.overflow = 'hidden'; 
+    document.addEventListener('keydown', this.boundHandleKeydown); 
+  }
+
+  closeLightbox(e) {
+    if (!e || e.target === this.lightboxModal) {
+        this.lightboxModal.classList.remove('lightbox-modal--visible');
+        document.body.style.overflow = ''; 
+        document.removeEventListener('keydown', this.boundHandleKeydown); 
+    }
+  }
+
+  handleKeydown(e) {
+      if (e.key === 'Escape' && this.lightboxModal.classList.contains('lightbox-modal--visible')) {
+          this.closeLightbox();
+      }
+  }
+
+  attachEvents() {
+    if (this.prevBtn) {
+      this.prevBtn.addEventListener("click", () => this.moveSlide(-1));
+    }
+    if (this.nextBtn) {
+      this.nextBtn.addEventListener("click", () => this.moveSlide(1));
+    }
+    
+    this.items.forEach(item => {
+        const image = item.querySelector('.slider-list__item__content img');
+        if (image) {
+            image.addEventListener('click', (e) => {
+                e.preventDefault(); 
+                this.openLightbox(image.src); 
+            });
+        }
+    });
   }
 
   renderPagination() {
@@ -37,15 +96,6 @@ class SimpleSlider {
       dot.setAttribute("data-slide-to", index);
       dot.addEventListener("click", () => this.goToSlide(index));
     });
-  }
-
-  attachEvents() {
-    if (this.prevBtn) {
-      this.prevBtn.addEventListener("click", () => this.moveSlide(-1));
-    }
-    if (this.nextBtn) {
-      this.nextBtn.addEventListener("click", () => this.moveSlide(1));
-    }
   }
 
   moveSlide(direction) {
@@ -76,7 +126,7 @@ class SimpleSlider {
 
     if (viewportWidth >= 1400) {
       offset = -25 * index;
-    } else {
+        } else {
       offset = -23 * index;
     }
     this.sliderList.style.transform = `translateX(${offset}%)`;
