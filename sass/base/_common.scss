@@ -11,3 +11,7 @@ body {
     color: var(--text-lighten);
     // overflow-x: hidden;
 }
+
+.no-scroll {
+    overflow: hidden;
+}

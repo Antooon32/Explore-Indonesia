@@ -77,6 +77,10 @@ body {
   color: var(--text-lighten);
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   width: 100%;
   min-width: 320px;
