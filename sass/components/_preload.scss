@@ -1,0 +1,69 @@
+.preload {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    z-index: 9999;
+    @include flex-column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    &__animation {
+        animation-name: preload;
+        animation-duration: 3s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    &__title {
+        // display: block;
+        font-family: var(--second-family);
+        font-weight: 900;
+        font-size: 58px;
+        line-height: 108%;
+        text-transform: uppercase;
+        color: orange;
+        margin-bottom: 35px;
+        max-width: 345px;
+        text-align: center;
+    }
+
+    &__loader {
+        border: 8px solid #f3f3f3;
+        border-top: 8px solid #3498db;
+        border-radius: 100%;
+        width: 60px;
+        height: 60px;
+        animation: spin 1s linear infinite;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+@keyframes preload {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}

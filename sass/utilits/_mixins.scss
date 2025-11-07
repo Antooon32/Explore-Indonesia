@@ -26,7 +26,7 @@
     }
 }
 
-@mixin multi-transition($properties, $duration: 500ms, $timing-function: cubic-bezier(0.4, 0, 0.2, 1), $delay: 0s) {
+@mixin multi-transition($properties, $duration: 750ms, $timing-function: cubic-bezier(0.4, 0, 0.2, 1), $delay: 0s) {
     $transitions: (
     );
 

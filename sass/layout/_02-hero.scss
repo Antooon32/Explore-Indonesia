@@ -244,32 +244,33 @@
             right: 0px;
         }
 
-        &__1rectangle {
-            width: 4px;
-            height: 100px;
-            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.45);
-            background: var(--main-color);
-            margin: 0 auto;
-        }
+        // &__1rectangle {
+        //     width: 4px;
+        //     height: 100px;
+        //     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.45);
+        //     background: var(--main-color);
+        //     margin: 0 auto;
+        // }
 
-        &__2rectangle {
-            width: 2px;
-            height: 296px;
-            background: var(--white);
-            margin: 0 auto;
-            margin-bottom: 20px;
-        }
+        // &__2rectangle {
+        //     width: 2px;
+        //     height: 296px;
+        //     background: var(--white);
+        //     margin: 0 auto;
+        //     margin-bottom: 20px;
+        // }
 
-        &__number {
-            font-weight: 700;
-            font-size: 16px;
-            color: var(--white);
-            text-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
-            transform: rotate(270deg);
-            margin-bottom: 226px;
-        }
+        // &__number {
+        //     font-weight: 700;
+        //     font-size: 16px;
+        //     color: var(--white);
+        //     text-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+        //     transform: rotate(270deg);
+        //     margin-bottom: 226px;
+        // }
 
         .sociallist {
+            margin-top: 675px;
             @include flex-column;
             gap: 35px;
 
@@ -278,8 +279,8 @@
                 font-size: 16px;
                 color: var(--white);
                 text-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
-                writing-mode: vertical-rl;
-                transform: rotate(180deg);
+                // writing-mode: vertical-rl;
+                // transform: rotate(180deg);
                 @include multi-transition(color);
 
                 &:hover {

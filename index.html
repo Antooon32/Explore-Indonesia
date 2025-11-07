@@ -22,6 +22,11 @@
 </head>
 
 <body>
+    <div class="preload">
+        <h2 class="preload__title">Explore Indonesia</h2>
+        <div class="preload__loader"></div>
+    </div>
+
     <div class="hero__overlay">
         <header class="header" id="header">
             <div class="container">
@@ -37,10 +42,10 @@
                 </a>
                 <nav class="header__nav">
                     <ul class="hlist">
-                        <li class="hlist__item"><a class="hlist__link" href="#">destinations</a></li>
-                        <li class="hlist__item"><a class="hlist__link" href="#">experiences</a></li>
-                        <li class="hlist__item"><a class="hlist__link" href="#">about</a></li>
-                        <li class="hlist__item"><a class="hlist__link" href="#">gallery</a></li>
+                        <li class="hlist__item"><a class="hlist__link" href="#destinations">destinations</a></li>
+                        <li class="hlist__item"><a class="hlist__link" href="#experiences">experiences</a></li>
+                        <li class="hlist__item"><a class="hlist__link" href="#about">about</a></li>
+                        <li class="hlist__item"><a class="hlist__link" href="#gallery">gallery</a></li>
                     </ul>
                     <ul class="hlist-mobile">
                         <li class="hlist-mobile__item">
@@ -122,9 +127,9 @@
                 </div>
 
                 <div class="hero__vertical">
-                    <div class="hero__vertical__1rectangle"></div>
+                    <!-- <div class="hero__vertical__1rectangle"></div>
                     <div class="hero__vertical__2rectangle"></div>
-                    <p class="hero__vertical__number">01</p>
+                    <p class="hero__vertical__number">01</p> -->
 
                     <ul class="sociallist">
                         <li class="sociallist__item">
@@ -142,7 +147,7 @@
         </section>
     </div>
     <main>
-        <section class="walkways">
+        <section class="walkways" id="about">
             <div class="walkways__overlay1">
                 <div class="container">
                     <picture class="walkways__picture">
@@ -339,7 +344,7 @@
                 </div>
             </div>
         </section>
-        <section class="life">
+        <section class="life" id="experiences">
             <div class="container">
                 <h2 class="life__title">Live a life like you wouldn’t imagine, experience a life you wouldn’t expect.
                 </h2>
@@ -390,7 +395,7 @@
                 </ul>
             </div>
         </section>
-        <section class="gallery">
+        <section class="gallery" id="gallery">
             <div class="container">
                 <h2 class="gallery__title">Photo Gallery</h2>
                 <p class="gallery__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
@@ -453,7 +458,7 @@
                 </ul>
             </div>
         </section>
-        <section class="getting">
+        <section class="getting" id="destinations">
             <div class="container">
                 <h2 class="getting__title">Getting there</h2>
                 <ul class="getting-list">
@@ -556,6 +561,7 @@
         </div>
     </footer>
 
+    <script src="./js/loader.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/show-more.js"></script>
     <script src="./js/burger.js"></script>
